@@ -8,6 +8,12 @@
 # testing
 /coverage
 
+# Ignore the entire assets folder
+/assets/
+
+# Include only the images folder inside assets
+!/assets/images/
+
 # production
 /build
 

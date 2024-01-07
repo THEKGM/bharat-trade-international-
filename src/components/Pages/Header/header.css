@@ -1,0 +1,43 @@
+/* Header Start......... */
+
+#headerSec {
+  border: 1px solid #333;
+}
+
+.offcanvas-body ul {
+  margin: 0;
+}
+.offcanvas-body ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.offcanvas-body ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+#headerSec .offcanvas-header a {
+  text-decoration: none;
+  color: #333;
+}
+
+#headerSec ul li:hover {
+  background-color: blue;
+}
+
+#headerSec .offcanvas-body ul li:hover #headerSec .offcanvas-body ul li a {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  #headerSec .offcanvas-body ul li {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+}
+
+/* Header End......... */

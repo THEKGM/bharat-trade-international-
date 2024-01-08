@@ -1,12 +1,18 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import Header from './components/Pages/Header/Header';
+import Navbar from './components/Pages/Navbar/Navbar';
+import ChooseUs from './components/Pages/ChooseUs/ChooseUs';
+// import Home from './components/Pages/Home/Home';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Navbar />
+        {/* <div className='containerDiv'> */}
+        {/* <Home /> */}
+        <ChooseUs />
+        {/* </div> */}
       </BrowserRouter>
     </>
   );

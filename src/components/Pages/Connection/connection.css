@@ -1,0 +1,28 @@
+/* Connection CSS Start */
+
+#connectWorldSec {
+  height: 100vh;
+  position: relative;
+}
+
+.innerDiv {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* margin: 0 auto; */
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.headingSpace {
+  border: 1px solid red;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .bgColor {
+    height: 100vh !important;
+  }
+}
+/* Connection CSS End */

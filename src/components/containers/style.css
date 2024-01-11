@@ -1,0 +1,114 @@
+/* NavBar css start------------------- */
+
+#navSec {
+  border: 1px solid red;
+  width: 100%;
+  /* padding: 7px 10px; */
+  background-color: #fff;
+}
+
+.offcanvas {
+  width: 300px !important;
+}
+
+.offcanvas-body a {
+  margin: 10px;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 7px;
+}
+
+.offcanvas-body a:hover {
+  background-color: var(--background-color);
+  color: #fff;
+}
+
+/* NavBar css End------------------- */
+
+
+
+
+
+/* Home css start------------------- */
+
+/* #homeSec {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/Images/portHome.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+} */
+
+#homeSec img {
+  width: 100%;
+  height: 100vh;
+}
+
+#homeSec .containerAlignSpace > div {
+  width: 40%;
+  /* height: 310px; */
+  font-style: italic;
+  top: 20%;
+  right: 5%;
+  padding: 30px 40px;
+  background-color: #fff;
+}
+
+#homeSec .containerAlignSpace > div::after {
+  content: "";
+  width: 106%;
+  height: 106%;
+  /* background-color: var(--background-color); */
+  position: absolute;
+  top: -5px;
+  left: -10px;
+}
+
+#homeSec .containerAlignSpace > div h1 {
+  font-size: 45px;
+}
+
+/* Home css End------------------- */
+
+
+
+
+
+/* Meadia Query-------------------- */
+
+@media screen and (min-width: 991px) {
+  .offcanvas-body a {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  #homeSec .containerAlignSpace > div h1 {
+    font-size: 35px;
+    text-wrap: pretty;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .offcanvas {
+    width: 250px !important;
+    font-size: 15px;
+  }
+  .offcanvas-header h5 {
+    font-size: 17px;
+  }
+  #homeSec .containerAlignSpace > div {
+    width: 90%;
+    /* margin: 0 auto; */
+    padding: 10px;
+    text-align: center;
+    height: 310px;
+    max-height: 320px;
+    overflow: hidden;
+  }
+  #homeSec .containerAlignSpace > div button {
+    padding: 10px;
+    font-size: small;
+  }
+}

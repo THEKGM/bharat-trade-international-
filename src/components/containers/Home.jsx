@@ -6,13 +6,14 @@ function Home() {
     <>
       <section id='homeSec' className='position-relative'>
         <img src={homeBg} className='img-fluid' alt="" />
-        <div className='containerAlignSpace'>
-          <div className="position-absolute">
-            <h4 className='mb-3'>Our Company</h4>
-            <h1>Customer First, People Led, Innovation Driven</h1>
-            <button className='Btn'>Contact Us</button>
-          </div>
+        {/* <div className='containerAlignSpace'> */}
+        <div className='bgWall' />
+        <div className="position-absolute">
+          <h4 className='mb-3'>Our Company</h4>
+          <h1>Customer First, People Led, Innovation Driven</h1>
+          <button className='Btn'>Contact Us</button>
         </div>
+        {/* </div> */}
       </section>
     </>
   )

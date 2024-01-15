@@ -40,11 +40,17 @@ body {
   border: none;
   border-radius: 4px;
   color: #ffffff;
+  cursor: pointer;
   background-color: var(--background-color);
+}
+
+.Btn:hover {
+  background-color: #d98b0d;
 }
 
 @media screen and (max-width: 576px) {
   .containerAlignSpace {
     width: 100%;
+    padding: 0;
   }
 }

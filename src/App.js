@@ -3,6 +3,7 @@ import './App.css';
 import "./components/containers/style.css"
 import Navbar from './components/containers/Navbar';
 import Home from './components/containers/Home';
+import CnWorld from './components/containers/CnWorld';
 // import Navbar from './components/Pages/Navbar/Navbar';
 // import Home from './components/Pages/Home/Home';
 // import Connection from './components/Pages/Connection/Connection';
@@ -16,6 +17,7 @@ function App() {
         <Connection /> */}
         <Navbar />
         <Home />
+        <CnWorld />
       </BrowserRouter>
     </>
   );

@@ -1,9 +1,7 @@
 /* NavBar css start------------------- */
 
 #navSec {
-  border: 1px solid red;
   width: 100%;
-  /* padding: 7px 10px; */
   background-color: #fff;
 }
 
@@ -25,27 +23,15 @@
 
 /* NavBar css End------------------- */
 
-
-
-
-
 /* Home css start------------------- */
-
-/* #homeSec {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../../assets/Images/portHome.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-} */
 
 #homeSec img {
   width: 100%;
   height: 100vh;
 }
 
-#homeSec .containerAlignSpace > div {
+/* #homeSec .containerAlignSpace > div { */
+#homeSec > div {
   width: 40%;
   /* height: 310px; */
   font-style: italic;
@@ -55,27 +41,115 @@
   background-color: #fff;
 }
 
-#homeSec .containerAlignSpace > div::after {
-  content: "";
+/* #homeSec .containerAlignSpace > div::after { */
+#homeSec .bgWall {
+  /* content: "";
   width: 106%;
   height: 106%;
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
   position: absolute;
   top: -5px;
-  left: -10px;
+  left: -10px; */
+  /* content: ""; */
+  width: 500px;
+  height: 300px;
+  background-color: var(--background-color);
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translate(0, -65%);
 }
 
-#homeSec .containerAlignSpace > div h1 {
+/* #homeSec .containerAlignSpace > div h1 { */
+#homeSec > div h1 {
   font-size: 45px;
 }
 
 /* Home css End------------------- */
 
+/* ConnectWorld css start------------------- */
 
+#connectWorldSpace {
+  background-color: #ffad28;
+}
 
+/* #connectWorldSpace::after{
+  content: "";
+  width: 100%;
+  height: 30%;
+  background-color: #808080;
+  position: absolute;
+} */
 
+.headPart {
+  padding: 30px;
+  color: #fff;
+}
+.headPart p {
+  /* font-weight: 400; */
+  line-height: 2;
+  font-style: italic;
+  font-size: 1.125rem;
+}
+
+#connectWorldSpace h4 {
+  margin: 20px 0 0;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+#connectWorldSpace .row p {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 20px 0 0;
+  font-weight: 400;
+  color: #808080;
+  word-wrap: break-word;
+}
+
+#connectWorldSpace .row .col > div {
+  transition: 0.4s;
+}
+
+#connectWorldSpace .row .col > div:hover {
+  box-shadow: 0 0 12px 13px var(--background-color);
+}
+
+.row > * {
+  margin-bottom: var(--bs-gutter-y);
+}
+
+.row .col div {
+  border-radius: 0;
+}
+
+/* contactPeraSec------ */
+
+.contactPeraSec {
+  padding: 55px 0;
+}
+
+.contactPeraSec .card {
+  border: none;
+  border-radius: 0;
+}
+.contactPeraSec .card .InfoPart > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+
+/* connectWorldSpace css End------------------- */
 
 /* Meadia Query-------------------- */
+
+@media screen and (max-width: 1101px) {
+  #connectWorldSpace h4 {
+    font-size: 20px;
+  }
+}
 
 @media screen and (min-width: 991px) {
   .offcanvas-body a {
@@ -84,7 +158,8 @@
 }
 
 @media screen and (max-width: 815px) {
-  #homeSec .containerAlignSpace > div h1 {
+  /* #homeSec .containerAlignSpace > div h1 { */
+  #homeSec > div h1 {
     font-size: 35px;
     text-wrap: pretty;
   }
@@ -95,19 +170,26 @@
     width: 250px !important;
     font-size: 15px;
   }
+
   .offcanvas-header h5 {
     font-size: 17px;
   }
-  #homeSec .containerAlignSpace > div {
-    width: 90%;
-    /* margin: 0 auto; */
-    padding: 10px;
-    text-align: center;
-    height: 310px;
-    max-height: 320px;
+
+  /* #homeSec .containerAlignSpace > div { */
+  #homeSec > div {
+    width: 85%;
+    /* padding: 10px; */
+    padding: 25px;
+    /* height: 310px; */
+    height: auto;
+    text-align: left;
+    max-height: 370px;
+    margin: 10px;
     overflow: hidden;
   }
-  #homeSec .containerAlignSpace > div button {
+
+  /* #homeSec .containerAlignSpace > div button { */
+  #homeSec > div button {
     padding: 10px;
     font-size: small;
   }

@@ -23,13 +23,14 @@ function Navbar() {
                             <div className="offcanvas offcanvas-start"
                                 data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                                 <div className="offcanvas-header">
-                                    <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                                    <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">Bharat Trade Ins.</h5>
                                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div className="offcanvas-body justify-content-end">
                                     <Link className="nav-link active" aria-current="page" href="#">Home</Link>
-                                    <Link className="nav-link" href="#">Features</Link>
-                                    <Link className="nav-link" href="#">Pricing</Link>
+                                    <Link className="nav-link" href="#">Products</Link>
+                                    <Link className="nav-link" href="#">About</Link>
+                                    <Link className="nav-link" href="#">Contact Us</Link>
                                 </div>
                             </div>
                         </div>

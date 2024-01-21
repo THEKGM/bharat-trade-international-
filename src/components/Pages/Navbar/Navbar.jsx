@@ -1,50 +1,38 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, Container, Offcanvas } from 'react-bootstrap';
-import navBar_Logo from "../../../assets/Images/headerImageCroped-removebg-preview.png";
-// import dorpDownArrow from "../../../assets/svg/arrow-down.svg";
+import React from 'react'
+import { Link } from 'react-router-dom'
+// import navBarLogo from "../../assets/Images/headerImageCroped-removebg-preview.png"
 import "./navbar.css"
 
-const NavigationBar = () => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
+function Navbar() {
     return (
         <>
-            <section className='border'>
-                <div className="containerDiv p-0">
-                    <Navbar bg="light" className='p-0' expand={false}>
-                        <Container fluid>
-                            <Navbar.Brand href="#home">
-                                <img src={navBar_Logo} width={70} height={50} alt="" />
-                            </Navbar.Brand>
-                            <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
-                            <Navbar.Offcanvas
-                                id="offcanvasNavbar"
-                                aria-labelledby="offcanvasNavbarLabel"
-                                placement="end"
-                                show={show}
-                                onHide={handleClose}
-                            >
-                                <Offcanvas.Header closeButton>
-                                    <Offcanvas.Title id="offcanvasNavbarLabel">Bharat Trade International</Offcanvas.Title>
-                                </Offcanvas.Header>
-                                <Offcanvas.Body>
-                                    <Nav className="justify-content-end flex-grow-1 pe-3">
-                                        <Nav.Link href="#home">Home</Nav.Link>
-                                        <Nav.Link href="#about">About</Nav.Link>
-                                        <Nav.Link href="#contact">Contact</Nav.Link>
-                                    </Nav>
-                                </Offcanvas.Body>
-                            </Navbar.Offcanvas>
-                        </Container>
-                    </Navbar>
+            <section id='navSec' className='sticky-top'>
+                <div className='containerAlignSpace'>
+                    <nav className="navbar navbar-expand-lg">
+                        <div className="container-fluid">
+                            <Link className="navbar-brand" href="#">BharatTradeIns</Link>
+                            <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <div className="offcanvas offcanvas-start"
+                                data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                <div className="offcanvas-header">
+                                    <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">Bharat Trade Ins.</h5>
+                                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div className="offcanvas-body justify-content-end">
+                                    <Link className="nav-link active" aria-current="page" href="#">Home</Link>
+                                    <Link className="nav-link" href="#">Products</Link>
+                                    <Link className="nav-link" href="#">About</Link>
+                                    <Link className="nav-link" href="#">Contact Us</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </section>
-
         </>
-    );
-};
+    )
+}
 
-export default NavigationBar;
+export default Navbar

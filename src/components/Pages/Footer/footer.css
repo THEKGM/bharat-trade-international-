@@ -1,0 +1,49 @@
+/* Footer css Start------------------- */
+
+#footerSection {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.footer-container {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container #footerContent{
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.social-links-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  flex-direction: column;
+}
+
+.company-info p{
+    text-align: justify;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  color: #f19a0e;
+}
+
+.copyright {
+  margin-top: 60px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Footer css End------------------- */

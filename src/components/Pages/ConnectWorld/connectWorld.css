@@ -1,0 +1,108 @@
+/* ConnectWorld css start------------------- */
+
+#connectWorldSpace {
+  background-color: #ffad28;
+}
+
+#connectWorldSpace .CnWSpace {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.headPart {
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.headPart p {
+  line-height: 1.6;
+  font-style: italic;
+  font-size: 1.125rem;
+  margin: 15px 0 0;
+}
+
+#featureCards {
+  background-color: #ffad28;
+  text-align: center;
+  margin: 0;
+}
+
+#featureCards h4 {
+  margin: 20px 0 0;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+#featureCards p {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 20px 0 0;
+  font-weight: 400;
+  color: #808080;
+  word-wrap: break-word;
+}
+
+#featureCards .col > .card {
+  transition: 0.4s;
+  height: 100%;
+  border: none;
+  padding: 18px;
+}
+
+#connectWorldSpace .row .col .card:hover {
+  box-shadow: 0 0 12px 13px var(--background-color);
+}
+
+.card-img-top {
+  height: 100%;
+}
+
+.row > * {
+  margin-bottom: var(--bs-gutter-y);
+}
+
+.row .col div {
+  border-radius: 0;
+}
+
+#learnMoreButtonSection {
+  text-align: center;
+  padding: 20px 0 35px;
+}
+
+#learnMoreButtonSection button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* contactPeraSec------ */
+
+#contactParagraphSection {
+  padding: 55px 0;
+}
+
+#contactParagraphSection .card {
+  border: none;
+  border-radius: 0;
+}
+
+.InfoPart {
+  padding: 50px !important;
+  background-color: #e5e5e5;
+}
+
+.InfoPart > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+}
+
+.card-text {
+  margin-top: 20px;
+}
+
+/* connectWorldSpace css End------------------- */

@@ -1,28 +1,3 @@
-/* NavBar css start------------------- */
-
-#navSec {
-  width: 100%;
-  background-color: #fff;
-}
-
-.offcanvas {
-  width: 300px !important;
-}
-
-.offcanvas-body a {
-  margin: 10px;
-  padding: 10px;
-  font-weight: 500;
-  border-radius: 7px;
-}
-
-.offcanvas-body a:hover {
-  background-color: var(--background-color);
-  color: #fff;
-}
-
-/* NavBar css End------------------- */
-
 /* Home css start------------------- */
 
 #homeSec img {
@@ -67,130 +42,120 @@
 
 /* Home css End------------------- */
 
-/* ConnectWorld css start------------------- */
 
-#connectWorldSpace {
-  background-color: #ffad28;
+/* Products css Start------------------- */
+
+#productImages {
+  padding: 20px 10px;
+  text-align: center;
+  background-color: var(--background-color);
 }
 
-/* #connectWorldSpace::after{
-  content: "";
-  width: 100%;
-  height: 30%;
-  background-color: #808080;
-  position: absolute;
-} */
+.productImageSpace > .text-center > div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
 
-.headPart {
-  padding: 30px;
+.productImageSpace > .text-center > div p {
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: chocolate;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.productImageSpace > .text-center > .row div div {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.productImageSpace > .text-center > .row img{
+  border-radius: 25px 25px 0 0;
+}
+
+.productImageSpace > .text-center > .row h5 {
+  background-color: chocolate;
+  padding: 5px;
+  color: #fff;
+  text-wrap: wrap;
+  margin-bottom: 0;
+  border-radius: 0 0 25px 25px;
+}
+
+/* Products css End------------------- */
+
+/* Owners css Start------------------- */
+
+.OwnersMainPart {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.OwnersMainPart > div {
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.OwnersMainPart > div img {
+  height: 330px;
+  width: 330px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.OwnersMainPart .infoChild {
+  padding: 40px 30px;
+  text-align: justify;
+}
+
+/* Owners css End------------------- */
+
+/* About Us css Start------------------- */
+
+#aboutUs {
+  background-color: var(--background-color);
+  color: #fff;
+  padding: 20px 0;
+}
+
+#aboutUs img {
+  width: 100%;
+  /* min-height: 280px; */
+  height: auto;
+}
+
+#aboutUs h5 {
+  color: var(--background-color);
+  font-weight: 700;
+}
+
+/* Booking Part------ */
+
+.booking_Part {
+  padding: 70px 0 30px;
+}
+
+.booking_Part .row .text-dark {
+  padding: 40px 25px;
+}
+
+.booking_Part button {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 28px;
+  border: none;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.booking_Part button:hover {
+  background-color: var(--background-color);
   color: #fff;
 }
-.headPart p {
-  /* font-weight: 400; */
-  line-height: 2;
-  font-style: italic;
-  font-size: 1.125rem;
-}
 
-#connectWorldSpace h4 {
-  margin: 20px 0 0;
-  font-weight: 700;
-  word-wrap: break-word;
-}
-
-#connectWorldSpace .row p {
-  font-size: 1rem;
-  font-style: italic;
-  margin: 20px 0 0;
-  font-weight: 400;
-  color: #808080;
-  word-wrap: break-word;
-}
-
-#connectWorldSpace .row .col > div {
-  transition: 0.4s;
-}
-
-#connectWorldSpace .row .col > div:hover {
-  box-shadow: 0 0 12px 13px var(--background-color);
-}
-
-.row > * {
-  margin-bottom: var(--bs-gutter-y);
-}
-
-.row .col div {
-  border-radius: 0;
-}
-
-/* contactPeraSec------ */
-
-.contactPeraSec {
-  padding: 55px 0;
-}
-
-.contactPeraSec .card {
-  border: none;
-  border-radius: 0;
-}
-.contactPeraSec .card .InfoPart > div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100%;
-}
-
-/* connectWorldSpace css End------------------- */
-
-/* Meadia Query-------------------- */
-
-@media screen and (max-width: 1101px) {
-  #connectWorldSpace h4 {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 991px) {
-  .offcanvas-body a {
-    margin: 0 20px;
-  }
-}
-
-@media screen and (max-width: 815px) {
-  /* #homeSec .containerAlignSpace > div h1 { */
-  #homeSec > div h1 {
-    font-size: 35px;
-    text-wrap: pretty;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .offcanvas {
-    width: 250px !important;
-    font-size: 15px;
-  }
-
-  .offcanvas-header h5 {
-    font-size: 17px;
-  }
-
-  /* #homeSec .containerAlignSpace > div { */
-  #homeSec > div {
-    width: 85%;
-    /* padding: 10px; */
-    padding: 25px;
-    /* height: 310px; */
-    height: auto;
-    text-align: left;
-    max-height: 370px;
-    margin: 10px;
-    overflow: hidden;
-  }
-
-  /* #homeSec .containerAlignSpace > div button { */
-  #homeSec > div button {
-    padding: 10px;
-    font-size: small;
-  }
-}
+/* About Us css End------------------- */

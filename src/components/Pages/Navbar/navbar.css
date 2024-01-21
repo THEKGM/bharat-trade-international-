@@ -1,8 +1,24 @@
-/* Navbar CSS Start */
+/* NavBar css start------------------- */
 
-.navbar-toggler-icon{
-    width: 1.1em !important;
-    height: 1.3em !important;
+#navSec {
+  width: 100%;
+  background-color: #fff;
 }
 
-/* Navbar CSS End */
+.offcanvas {
+  width: 300px !important;
+}
+
+.offcanvas-body a {
+  margin: 10px;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 7px;
+}
+
+.offcanvas-body a:hover {
+  background-color: var(--background-color);
+  color: #fff;
+}
+
+/* NavBar css End------------------- */

@@ -1,4 +1,4 @@
-/* Globle CSS / Main-Css */
+/* Global CSS / Main-Css */
 
 * {
   margin: 0;
@@ -8,25 +8,25 @@
 
 :root {
   --background-color: #f19a0e;
+  --color: #f19a0e;
 }
 
 body {
   font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  /* font-family: Montserrat, sans-serif !important; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .containerDiv {
-  border: 1px solid #000;
   max-width: 80%;
   margin: 0 auto;
   padding: 1rem;
 }
 
 .containerAlignSpace {
-  border: 1px solid red;
   width: 80%;
   margin: 0 auto;
 }
@@ -48,9 +48,71 @@ body {
   background-color: #d98b0d;
 }
 
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+/* Meadia Query-------------------- */
+
+@media screen and (max-width: 1101px) {
+  #connectWorldSpace h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .offcanvas-body a {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  #homeSec > div h1 {
+    font-size: 35px;
+    text-wrap: pretty;
+  }
+}
+
 @media screen and (max-width: 576px) {
+  .offcanvas {
+    width: 250px !important;
+    font-size: 15px;
+  }
+
+  .offcanvas-header h5 {
+    font-size: 17px;
+  }
+
+  #homeSec > div {
+    width: 85%;
+    padding: 25px;
+    height: auto;
+    text-align: left;
+    max-height: 370px;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  #homeSec > div button {
+    padding: 10px;
+    font-size: small;
+  }
   .containerAlignSpace {
     width: 100%;
     padding: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #contactSec {
+    height: auto;
+  }
+}
+
+/* @media screen and (max-width: 576px) {
+  .containerAlignSpace {
+    width: 100%;
+    padding: 0;
+  }
+} */

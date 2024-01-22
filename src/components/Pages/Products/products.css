@@ -1,0 +1,43 @@
+/* Products css Start------------------- */
+
+#productImagesSection {
+  padding: 20px 10px;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.productImageSpace .filter-options {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.productImageSpace .filter-options p {
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: chocolate;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#productGrid .product-item div {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+#productGrid img {
+  border-radius: 25px 25px 0 0;
+}
+
+.productImageSpace #productGrid h5 {
+  background-color: chocolate;
+  padding: 5px;
+  color: #fff;
+  text-wrap: wrap;
+  margin-bottom: 0;
+  border-radius: 0 0 25px 25px;
+}
+
+/* Products css End------------------- */

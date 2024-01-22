@@ -20,12 +20,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.containerDiv {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 .containerAlignSpace {
   width: 80%;
   margin: 0 auto;
@@ -37,23 +31,20 @@ body {
   font-size: 1rem;
   margin-top: 20px;
   padding: 12px 40px;
-  border: none;
-  border-radius: 4px;
+  /* border: none; */
+  border-radius: 30px;
   color: #ffffff;
   cursor: pointer;
   background-color: var(--background-color);
+  border: 1px solid #f19a0e;
 }
 
 .Btn:hover {
-  background-color: #d98b0d;
+  /* background-color: #d98b0d; */
+  background-color: #da8e14;
 }
 
-.row {
-  margin: 0;
-  padding: 0;
-}
-
-/* Meadia Query-------------------- */
+/* Media Query-------------------- */
 
 @media screen and (max-width: 1101px) {
   #connectWorldSpace h4 {
@@ -67,13 +58,6 @@ body {
   }
 }
 
-@media screen and (max-width: 815px) {
-  #homeSec > div h1 {
-    font-size: 35px;
-    text-wrap: pretty;
-  }
-}
-
 @media screen and (max-width: 576px) {
   .offcanvas {
     width: 250px !important;
@@ -84,20 +68,6 @@ body {
     font-size: 17px;
   }
 
-  #homeSec > div {
-    width: 85%;
-    padding: 25px;
-    height: auto;
-    text-align: left;
-    max-height: 370px;
-    margin: 10px;
-    overflow: hidden;
-  }
-
-  #homeSec > div button {
-    padding: 10px;
-    font-size: small;
-  }
   .containerAlignSpace {
     width: 100%;
     padding: 0;
@@ -105,8 +75,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  #contactSec {
+  #contactSection {
     height: auto;
+  }
+  #contactDetailsRow > div {
+    margin: 10px 0;
   }
 }
 

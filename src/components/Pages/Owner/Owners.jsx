@@ -1,6 +1,7 @@
 import React from 'react'
-import profileImage from "../../assets/Images/profileImg.jpg"
+import profileImage from "../../../assets/Images/profileImg.jpg"
 // import quoteImg from "../../assets/svg/singleQuote.svg"
+import "./owner.css"
 
 function Owners() {
     return (

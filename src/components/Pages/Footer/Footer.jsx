@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 // import TWITTER_X_ICON from "../../assets/svg/twitterX.svg"
 // import WHATSAPP_ICON from "../../assets/svg/whatsapp.svg"
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa"
-import ContactForm from '../../containers/Components/ContactForm'
 import "./footer.css"
+import ContactForm from '../Components/ContactForm'
 
 function Footer() {
     return (

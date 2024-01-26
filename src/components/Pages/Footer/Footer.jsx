@@ -11,36 +11,6 @@ import ContactForm from '../Components/ContactForm'
 function Footer() {
     return (
         <>
-            {/* <div id='ff'>
-                <div className='containerAlignSpace'>
-                    <footer className="footer-container">
-                        <div className='row p-0 m-0 justify-content-between'>
-                            <div className="social-links-container col-md-5 col-lg-4 p-0 mb-5 mb-md-0 flex-column justify-content-evenly">
-                                <div className='my-3'>
-                                    <img src="sss" alt="companyLogo" />
-                                    <p style={{ textAlign: 'justify' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iusto officia ipsam tempore nihil voluptates dicta vitae labore maxime reprehenderit.</p>
-                                </div>
-                                <div>
-                                    <Link href="#" target="_blank" rel="noopener noreferrer" className="social-link"><FaFacebook /></Link>
-                                    <Link href="#" target="_blank" rel="noopener noreferrer" className="social-link"><FaTwitter /></Link>
-                                    <Link href="#" target="_blank" rel="noopener noreferrer" className="social-link"><FaInstagram /></Link>
-                                    <Link href="#" target="_blank" rel="noopener noreferrer" className="social-link"><FaWhatsapp /></Link>
-                                </div>
-                            </div>
-                            <div className="contact-form col-md-7 col-lg-7 p-0 ps-md-5">
-                                <ContactForm />
-                            </div>
-                        </div>
-                        <div className='mt-3'>
-                            <p className="copyright mb-0">&copy; 2024 Bharat Trade International. All Rights Reserved.</p>
-                        </div>
-                    </footer>
-                </div>
-            </div> */}
-
-
-
-
             <section id='footerSection'>
                 <div className='containerAlignSpace'>
                     <footer className="footer-container">

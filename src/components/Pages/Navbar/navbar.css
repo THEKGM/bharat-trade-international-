@@ -9,6 +9,11 @@
   width: 300px !important;
 }
 
+.offcanvas-header {
+  background-color: #f19a0ea8;
+  color: #fff;
+}
+
 .offcanvas-body a {
   margin: 10px;
   padding: 10px;
@@ -19,6 +24,12 @@
 .offcanvas-body a:hover {
   background-color: var(--background-color);
   color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .offcanvas-body {
+    background-color: bisque;
+  }
 }
 
 /* NavBar css End------------------- */

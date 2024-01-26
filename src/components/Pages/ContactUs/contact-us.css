@@ -1,6 +1,6 @@
 /* Contact Us css Start------------------- */
 
-#contactSection {
+.contact-section {
   text-align: center;
   background-image: url("../../../assets/Images/contactBGImg1.jpg");
   background-repeat: no-repeat;

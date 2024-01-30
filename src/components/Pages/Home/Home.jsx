@@ -12,10 +12,9 @@ function Home() {
           {/* <h4 className='company-tagline mb-3'>Our Company</h4> */}
           {/* <h1 className='main-heading'>Customer First, People Led, Innovation Driven</h1> */}
           <h1 className='main-heading'>"Elevating Experiences Where Customers Reign,<br /> People Lead, and Innovation Thrives"</h1>
-          <p className='mt-3'>See how your users experience your website in realtime or view<br />
-            trends to see any changes in performance over time.</p>
+          <p className='mt-3'>"Unlock global opportunities with our export expertise. Seamless solutions for <br /> success in international markets. Elevate your business worldwide."</p>
           <Link to='#contactSection'><button className='Btn mx-3'>Contact Us</button></Link>
-          <Link to='#connectWorldSpace'><button className='contact-btn Btn mx-3'>Get Started</button></Link>
+          {/* <Link to='#connectWorldSpace'><button className='contact-btn Btn mx-3'>Get Started</button></Link> */}
         </div>
       </section>
     </>

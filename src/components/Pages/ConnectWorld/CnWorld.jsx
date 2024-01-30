@@ -11,12 +11,12 @@ import "./connectWorld.css"
 function CnWorld() {
     return (
         <>
-            <section id='connectWorldSpace'>
+            {/* <section id='connectWorldSpace'>
                 <div className="containerAlignSpace">
                     <div className='CnWSpace'>
                         <div className='headPart'>
                             <h1 className="main-heading">We Connect the World</h1>
-                            <p className='text-break'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Eos at ut totam laudantium, accusantium labore!</p>
+                            <p className='text-break'>"Global Bridges, Connecting Businesses Worldwide for <br /> Endless Opportunities and Flourishing Partnerships."</p>
                         </div>
                         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4' id="featureCards">
                             <div className='col'>
@@ -52,7 +52,7 @@ function CnWorld() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section id="contactParagraphSection">
                 <div className="containerAlignSpace">
@@ -62,7 +62,7 @@ function CnWorld() {
                                 <div className="card-body">
                                     <h4 className="card-title">OUR COMPANY</h4>
                                     <h3 className="card-text">Leading the industry and connecting the world.</h3>
-                                    <p className="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                    <p className="card-text">We specializes in sourcing premium agricultural products from the diverse landscapes of India. Our commitment to sustainability and fair trade practices ensures the delivery of top-quality crops, spices, and organic produce. Through strong partnerships with local farmers, we export the authentic flavors and richness of India's agriculture, maintaining stringent quality control to offer exceptional products to global markets.</p>
                                     <Link to='#contactSection'><button className='Btn' id="contactUsButton">Contact Us</button></Link>
                                 </div>
                             </div>

@@ -4,7 +4,7 @@ import containerImgForStrategy from "../../../assets/Images/containerForStrategy
 import mission from "../../../assets/Images/container.jpg"
 import "./about.css"
 
-function About() {
+function About({handleWhatsAppClick}) {
     return (
         <>
             <section id='aboutUsSection' className='about-us-section'>
@@ -12,16 +12,16 @@ function About() {
                     <div className='aboutMainSpace'>
                         <div className='about-content w-75 mx-auto'>
                             <h1 className='about-heading mb-4'>Connect your business with the world</h1>
-                            <p>As a leader in the design and construction of advanced technology facilities, our architectural solutions are a result of a collaborative process that empowers our multidisciplinary teams to share knowledge, leverage new technology and create innovative design solutions.</p>
+                            <p>' As a leader in the design and construction of advanced technology facilities, our architectural solutions are a result of a collaborative process that empowers our multidisciplinary teams to share knowledge, leverage new technology and create innovative design solutions. '</p>
                         </div>
                         <div className='mt-5 row row-cols-1 row-cols-md-3 p-0 m-0'
                             id='aboutUsFeatures'>
                             <div className="col feature-column">
                                 <div>
                                     <h5>About Us</h5>
-                                    <p>Mauris pharetra et ultrices neque ornare aenean euismod. Habitant morbi tristique senectus et netus et malesuada fames. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
+                                    <p>"We specializes in sourcing premium agricultural products from the diverse landscapes of India. Our commitment to sustainability and fair trade practices ensures the delivery of top-quality crops, spices, and organic produce."</p>
                                 </div>
-                                
+
                             </div>
                             <div className="col p-0">
                                 <img src={containerImgForStrategy} alt="Our Strategy" />
@@ -29,7 +29,7 @@ function About() {
                             <div className="col feature-column">
                                 <div>
                                     <h5>Our Strategy</h5>
-                                    <p>Mauris pharetra et ultrices neque ornare aenean euismod. Habitant morbi tristique senectus et netus et malesuada fames. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
+                                    <p>"Crafting Success: Our strategic approach blends innovation and precision, navigating challenges to ensure sustained growth. Partner with us for strategic excellence in a dynamic global landscape."</p>
                                 </div>
                             </div>
                             <div className="col p-0">
@@ -38,7 +38,7 @@ function About() {
                             <div className="col feature-column">
                                 <div>
                                     <h5>Our Mission</h5>
-                                    <p>Mauris pharetra et ultrices neque ornare aenean euismod. Habitant morbi tristique senectus et netus et malesuada fames. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
+                                    <p>"Our mission is to provide a superior quality, cost effective end to end export and import service, through strong customer focus, continuous improvement, reliability and trust – consistently exceeding our customers’ expectations."</p>
                                 </div>
                             </div>
                             <div className="col p-0">
@@ -52,14 +52,13 @@ function About() {
                                     <p style={{ fontSize: '13px' }}>Book a free, 15-minute consultation to discover new opportunities, shipping solutions and more.</p>
                                 </div>
                                 <div className='col-md-3 bg-white d-flex justify-content-center align-items-center'>
-                                    <button className='book-now-btn'>Book now</button>
+                                    <button className='book-now-btn' onClick={handleWhatsAppClick}>Book now</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </>
     )
 }

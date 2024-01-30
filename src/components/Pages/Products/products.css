@@ -22,7 +22,8 @@
 }
 
 #productGrid .product-item div {
-  padding: 10px;
+  /* padding: 10px; */
+  padding: 5px;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -37,7 +38,7 @@
 
 .productImageSpace #productGrid h5 {
   background-color: chocolate;
-  padding: 5px;
+  padding: 5px 0 10px;
   color: #fff;
   text-wrap: wrap;
   margin-bottom: 0;

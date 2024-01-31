@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 // import Navbar from './components/containers/Navbar';
 import Home from './components/Pages/Home/Home';
@@ -12,6 +12,7 @@ import About from './components/Pages/About/About';
 import { FaArrowCircleUp } from 'react-icons/fa';
 import { useEffect } from 'react';
 import WHATSAPP_ICON from "./assets/Images/whatsappIcon.png"
+import ProductsImgStore from './components/Pages/Products/ProductsImgStore';
 
 function App() {
   useEffect(() => {
@@ -39,6 +40,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <Routes>
+          <Route path='/productsImgStore' element={<ProductsImgStore />} />
+        </Routes>
         <Navbar />
         <Home />
         <CnWorld />

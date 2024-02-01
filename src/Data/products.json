@@ -1,0 +1,101 @@
+const products = [
+    {
+        "categoryName": "Fruits",
+        "categoryId": 1,
+        "subCategory":[
+            {
+                "subCatProductName" : "sampleProduct",
+                "subCatProductId": 101,
+                "subCatProductImage": "sampleImage"
+            }
+        ]
+    },
+    {
+        "categoryName": "Fruits",
+        "categoryId": 1,
+        "subCategory":[
+            {
+                "subCatProductName" : "sampleProduct",
+                "subCatProductId": 101,
+                "subCatProductImage": "sampleImage"
+            }
+        ]
+    },
+    {
+        "categoryName": "Fruits",
+        "categoryId": 1,
+        "subCategory":[
+            {
+                "subCatProductName" : "sampleProduct",
+                "subCatProductId": 101,
+                "subCatProductImage": "sampleImage"
+            }
+        ]
+    },
+    {
+        "categoryName": "Fruits",
+        "categoryId": 1,
+        "subCategory":[
+            {
+                "subCatProductName" : "sampleProduct",
+                "subCatProductId": 101,
+                "subCatProductImage": "sampleImage"
+            }
+        ]
+    },
+    {
+        "categoryName": "Fruits",
+        "categoryId": 1,
+        "subCategory":[
+            {
+                "subCatProductName" : "sampleProduct",
+                "subCatProductId": 101,
+                "subCatProductImage": "sampleImage"
+            }
+        ]
+    },
+    {
+        "categoryName": "Fruits",
+        "categoryId": 1,
+        "subCategory":[
+            {
+                "subCatProductName" : "sampleProduct",
+                "subCatProductId": 101,
+                "subCatProductImage": "sampleImage"
+            }
+        ]
+    },
+    {
+        "categoryName": "Fruits",
+        "categoryId": 1,
+        "subCategory":[
+            {
+                "subCatProductName" : "sampleProduct",
+                "subCatProductId": 101,
+                "subCatProductImage": "sampleImage"
+            }
+        ]
+    },
+    {
+        "categoryName": "Fruits",
+        "categoryId": 1,
+        "subCategory":[
+            {
+                "subCatProductName" : "sampleProduct",
+                "subCatProductId": 101,
+                "subCatProductImage": "sampleImage"
+            }
+        ]
+    },
+    {
+        "categoryName": "Fruits",
+        "categoryId": 1,
+        "subCategory":[
+            {
+                "subCatProductName" : "sampleProduct",
+                "subCatProductId": 101,
+                "subCatProductImage": "sampleImage"
+            }
+        ]
+    }
+];

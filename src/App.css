@@ -7,7 +7,9 @@
 }
 
 :root {
-  --background-color: #f19a0e;
+  /* --background-color: #f19a0e; */
+  /* --background-color: #edbb2ebf; */
+  --background-color: #e7b323d1;
   --color: #f19a0e;
 }
 
@@ -36,17 +38,18 @@ body {
   font-size: 1rem;
   margin-top: 20px;
   padding: 12px 40px;
-  /* border: none; */
+  border: none;
   border-radius: 30px;
   color: #ffffff;
   cursor: pointer;
   background-color: var(--background-color);
-  border: 1px solid #f19a0e;
+  /* border: 1px solid #f19a0e; */
 }
 
 .Btn:hover {
-  /* background-color: #d98b0d; */
-  background-color: #da8e14;
+  background-color: #d98b0d;
+  /* background-color: #da8e14;
+  box-shadow: 0 0 0 3px #f19a0e; */
 }
 
 button a {
@@ -61,15 +64,34 @@ button a {
 #arrowTopBtn {
   position: fixed;
   bottom: 25px;
-  right: 15px;
+  right: 0;
   font-size: 30px;
   padding: 7px;
   padding-top: 0;
   border: 0;
-  background: #da8e14;
+  background: var(--background-color);
   color: #fff;
   border-radius: 7px;
   transform: translateX(100px);
+}
+
+#arrowTopBtn:hover {
+  box-shadow: 0 0 13px 3px #da8e14;
+  background-color: #f1b657;
+}
+
+.whatsapp-btn {
+  border: none;
+  border-radius: 50%;
+  background-color: green;
+  position: fixed;
+  bottom: 25px;
+  left: 20px;
+}
+
+.whatsapp-btn img {
+  height: 45px;
+  width: 45px;
 }
 
 /* Media Query-------------------- */

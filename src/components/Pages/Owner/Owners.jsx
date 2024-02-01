@@ -8,7 +8,7 @@ function Owners() {
         <>
             <section id='ownersSpace' className='bg-light'>
                 <div className='containerAlignSpace bg-white'>
-                    <div className='OwnersMainPart row py-md-5 px-md-4'>
+                    <div className='OwnersMainPart row py-md-5 px-md-4 g-0'>
                         {/* <img src={quoteImg} width={50} height={50} alt="" /> */}
                         <div className='col-12 col-lg-6'>
                             <img src={profileImage} alt="" />

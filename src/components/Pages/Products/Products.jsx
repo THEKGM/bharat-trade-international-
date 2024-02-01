@@ -1,15 +1,18 @@
 import React from 'react'
 import productImg from "../../../assets/Images/ourStrategy.jpg"
 import "./products.css"
-// import { useNavigate } from 'react-router-dom'
-// import ProductsImgStore from './ProductsImgStore'
+import { useNavigate } from 'react-router-dom'
+// import ProductsImgStore from './ProductsImgStore';
+// import FRUIT_IMAGE from "../../../assets/Images/Products/Fruits/apples-3580560_1920.jpg"
 
 function Products() {
-    // const navigate = useNavigate();
-
-    // const goToProducts = () => {
-    //     // navigate(<ProductsImgStore />)
-    // };
+    const navigate = useNavigate();
+    const imagesCategory = ['', '', '', '', '', '', '', '', ''];
+    const handleProductCategory = () => {
+        console.log("clicked event...!")
+        // navigate(<ProductsImgStore />)
+        navigate("/productsImgStore")
+    }
     return (
         <>
             <section id='productImagesSection' className='product-images-section'>
@@ -19,82 +22,68 @@ function Products() {
                         <p className='text-break'>"Dive into a variety that redefines choices, elevating your experience with our exceptional offerings."</p>
                     </div>
                     <div className="text-center p-0">
-                        {/* <div className="filter-options">
-                            <p>All</p>
-                            <p>Fruits</p>
-                            <p>Vegetables</p>
-                            <p>Dry Fruits</p>
-                        </div> */}
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 p-0 m-0" id="productGrid">
-                            <div className="col product-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                <div>
+                            <div className="col product-item">
+                                <div onClick={handleProductCategory}>
                                     <img src={productImg} className='img-fluid' alt="Product" />
-                                    <h5>productName <small>productId</small></h5>
-                                </div>
-                            </div>
-                            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                <div className="modal-dialog">
-                                    <div className="modal-content">
-                                        <div className="modal-header">
-                                            <h1 className="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div className="modal-body">
-                                            Other category images
-                                        </div>
-                                        <div className="modal-footer">
-                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" className="btn btn-primary">Understood</button>
-                                        </div>
-                                    </div>
+                                    {/* <h5>productName <small>productId</small></h5> */}
+                                    <span>Category</span>
                                 </div>
                             </div>
                             <div className="col product-item">
                                 <div>
                                     <img src={productImg} className='img-fluid' alt="Product" />
-                                    <h5>productName <small>productId</small></h5>
+                                    {/* <h5>productName <small>productId</small></h5> */}
+                                    <span>Category</span>
                                 </div>
                             </div>
                             <div className="col product-item">
                                 <div>
                                     <img src={productImg} className='img-fluid' alt="Product" />
-                                    <h5>productName <small>productId</small></h5>
+                                    {/* <h5>productName <small>productId</small></h5> */}
+                                    <span>Category</span>
                                 </div>
                             </div>
                             <div className="col product-item">
                                 <div>
                                     <img src={productImg} className='img-fluid' alt="Product" />
-                                    <h5>productName <small>productId</small></h5>
+                                    {/* <h5>productName <small>productId</small></h5> */}
+                                    <span>Category</span>
                                 </div>
                             </div>
                             <div className="col product-item">
                                 <div>
                                     <img src={productImg} className='img-fluid' alt="Product" />
-                                    <h5>productName <small>productId</small></h5>
+                                    {/* <h5>productName <small>productId</small></h5> */}
+                                    <span>Category</span>
                                 </div>
                             </div>
                             <div className="col product-item">
                                 <div>
                                     <img src={productImg} className='img-fluid' alt="Product" />
-                                    <h5>productName <small>productId</small></h5>
+                                    {/* <h5>productName <small>productId</small></h5> */}
+                                    <span>Category</span>
                                 </div>
                             </div>
                             <div className="col product-item">
                                 <div>
                                     <img src={productImg} className='img-fluid' alt="Product" />
-                                    <h5>productName <small>productId</small></h5>
+                                    {/* <h5>productName <small>productId</small></h5> */}
+                                    <span>Category</span>
                                 </div>
                             </div>
                             <div className="col product-item">
                                 <div>
                                     <img src={productImg} className='img-fluid' alt="Product" />
-                                    <h5>productName <small>productId</small></h5>
+                                    {/* <h5>productName <small>productId</small></h5> */}
+                                    <span>Category</span>
                                 </div>
                             </div>
                             <div className="col product-item">
                                 <div>
                                     <img src={productImg} className='img-fluid' alt="Product" />
-                                    <h5>productName <small>productId</small></h5>
+                                    {/* <h5>productName <small>productId</small></h5> */}
+                                    <span>Category</span>
                                 </div>
                             </div>
                         </div>

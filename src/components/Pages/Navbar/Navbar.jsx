@@ -1,18 +1,8 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 import { HashLink as Link } from "react-router-hash-link"
-// import navBarLogo from "../../assets/Images/headerImageCroped-removebg-preview.png"
 import "./navbar.css"
 
 function Navbar() {
-    window.addEventListener("scroll", () => {
-        let navSec = document.getElementById("navSec");
-        if (window.scrollY > 400) {
-            navSec.style.boxShadow = "3px 0px 10px 10px rgba(0,0,0,0.7)";
-        } else {
-            navSec.style.boxShadow = "none";
-        }
-    })
     return (
         <>
             <section id='navSec' className='sticky-top'>

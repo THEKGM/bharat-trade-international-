@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 // import Navbar from './components/containers/Navbar';
 import Home from './components/Pages/Home/Home';
@@ -10,11 +10,18 @@ import Footer from './components/Pages/Footer/Footer';
 import Navbar from './components/Pages/Navbar/Navbar';
 import About from './components/Pages/About/About';
 import { FaArrowCircleUp } from 'react-icons/fa';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import WHATSAPP_ICON from "./assets/Images/whatsappIcon.png"
-import ProductsImgStore from './components/Pages/Products/ProductsImgStore';
+import Aos from 'aos';
+// import ProductsImgStore from './components/Pages/Products/ProductsImgStore';
 
 function App() {
+  // const [showProducts, setShowProducts] = useState(false)
+
+  useEffect(() => {
+    Aos.init();
+  }, [])
+
   useEffect(() => {
     let arrowTopBtn = document.getElementById("arrowTopBtn");
     window.addEventListener('scroll', () => {
@@ -25,10 +32,12 @@ function App() {
       }
     })
   }, [])
+
   const scrollToTop = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
   const handleWhatsAppClick = () => {
     // Replace 'phoneNumber' with your actual WhatsApp number
     const phoneNumber = '7041914309';
@@ -37,12 +46,22 @@ function App() {
     const url = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
     window.open(url, '_blank');
   };
+
+  // useEffect(() => {
+  //   if (window.location.pathname === '/productsImgStore') {
+  //     setShowProducts(true)
+  //   } else {
+  //     setShowProducts(false)
+  //   }
+  // }, [])
+
   return (
     <>
       <BrowserRouter>
-        <Routes>
+        {/* <Routes>
           <Route path='/productsImgStore' element={<ProductsImgStore />} />
-        </Routes>
+        </Routes> */}
+        {/* {showProducts ? <ProductsImgStore /> : <> */}
         <Navbar />
         <Home />
         <CnWorld />
@@ -50,6 +69,7 @@ function App() {
         <Owners />
         <About handleWhatsAppClick={handleWhatsAppClick} />
         <ContactUs />
+        {/* </>} */}
         <Footer handleWhatsAppClick={handleWhatsAppClick} />
         <button id="arrowTopBtn" onClick={scrollToTop}><FaArrowCircleUp /></button>
         <button className='whatsapp-btn' onClick={handleWhatsAppClick}>

@@ -26,7 +26,7 @@ function ContactForm(props) {
             {/* <section> */}
             <div className="contact-form-container">
                 {/* <h2 className='mb-3'>Contact {props.companyName}</h2> */}
-                <h2 className='mb-3'>Contact Form</h2>
+                <h2 className='mb-3' data-aos="zoom-out-up" data-aos-duration="1200">Contact Form</h2>
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
@@ -36,6 +36,7 @@ function ContactForm(props) {
                         value={formData.name}
                         onChange={handleChange}
                         required
+                        data-aos="flip-down" data-aos-duration="1200"
                     />
                     <input
                         type="email"
@@ -45,6 +46,7 @@ function ContactForm(props) {
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        data-aos="flip-down" data-aos-duration="1200"
                     />
                     <input
                         type="tel"
@@ -54,6 +56,7 @@ function ContactForm(props) {
                         value={formData.phnNumber}
                         onChange={handleChange}
                         required
+                        data-aos="flip-down" data-aos-duration="1200"
                     />
                     <textarea
                         id="message"
@@ -62,8 +65,9 @@ function ContactForm(props) {
                         value={formData.message}
                         onChange={handleChange}
                         required
+                        data-aos="flip-down" data-aos-duration="1200"
                     ></textarea>
-                    <button type="submit">Submit</button>
+                    <button type="submit" data-aos="flip-down" data-aos-duration="1200">Submit</button>
                 </form>
             </div>
             {/* </section> */}

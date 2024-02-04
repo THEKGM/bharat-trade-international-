@@ -1,7 +1,7 @@
 import React from 'react'
-import ourStrategy from "../../../assets/Images/ourStrategy.jpg"
-import InnovativeDriven from "../../../assets/Images/InnovativeDriven.jpg"
-import leadership from "../../../assets/Images/leadership.jpg"
+// import ourStrategy from "../../../assets/Images/ourStrategy.jpg"
+// import InnovativeDriven from "../../../assets/Images/InnovativeDriven.jpg"
+// import leadership from "../../../assets/Images/leadership.jpg"
 // import container from "../../assets/Images/container-429949_1920.jpg"
 import container from "../../../assets/Images/container-operation-port-series.jpg"
 // import { Link } from 'react-router-dom'
@@ -58,7 +58,7 @@ function CnWorld() {
                 <div className="containerAlignSpace">
                     <div className="card">
                         <div className="row g-0">
-                            <div className="col-lg-6 InfoPart">
+                            <div className="col-lg-6 InfoPart" data-aos="fade-right" data-aos-duration="800">
                                 <div className="card-body">
                                     <h4 className="card-title">OUR COMPANY</h4>
                                     <h3 className="card-text">Leading the industry and connecting the world.</h3>
@@ -66,7 +66,7 @@ function CnWorld() {
                                     <Link to='#contactSection'><button className='Btn' id="contactUsButton">Contact Us</button></Link>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6" data-aos="fade-left" data-aos-duration="800">
                                 <img src={container} width='100%' height='100%' alt="" />
                             </div>
                         </div>

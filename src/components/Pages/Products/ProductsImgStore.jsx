@@ -1,29 +1,51 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import APPLE_IMAGE from "../../../assets/Images/Products/Fruits/apples-Fruits.jpg"
+import { FaInfo } from "react-icons/fa"
 
 function ProductsImgStore() {
     return (
         <>
             <section id='ProductsImgStore'>
-                <div>ProductsImgStore</div>
-                <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable"></div>
-
-                <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Launch static backdrop modal
-                </button>
-
-                <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div className="modal-dialog">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h1 className="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div className='containerAlignSpace'>
+                    <div className="AllProductsSpace">
+                        <div className='my-3 py-3 text-center bg-light'><h3 className='text-uppercase mb-0' style={{ fontFamily: 'auto', fontWeight: '600' }}>Product Category</h3></div>
+                        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-0 p-0">
+                            <div className="col">
+                                <div className="card border-0">
+                                    <img src={APPLE_IMAGE} alt="..." />
+                                    <div className="card-body bg-light border">
+                                        <h5 className="card-title">Card title</h5>
+                                        <Link href="#" className=""><FaInfo /> Read More</Link>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="modal-body">
-                                ...
+                            <div className="col">
+                                <div className="card border-0">
+                                    <img src={APPLE_IMAGE} alt="..." />
+                                    <div className="card-body bg-light border">
+                                        <h5 className="card-title">Card title</h5>
+                                        <Link href="#" className=""><FaInfo /> Read More</Link>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary">Understood</button>
+                            <div className="col">
+                                <div className="card border-0">
+                                    <img src={APPLE_IMAGE} alt="..." />
+                                    <div className="card-body bg-light border">
+                                        <h5 className="card-title">Card title</h5>
+                                        <Link href="#" className=""><FaInfo /> Read More</Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card border-0">
+                                    <img src={APPLE_IMAGE} alt="..." />
+                                    <div className="card-body bg-light border">
+                                        <h5 className="card-title">Card title</h5>
+                                        <Link href="#" className=""><FaInfo /> Read More</Link>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,19 +1,20 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 // import Navbar from './components/containers/Navbar';
-import Home from './components/Pages/Home/Home';
-import CnWorld from './components/Pages/ConnectWorld/CnWorld';
-import Products from './components/Pages/Products/Products';
-import Owners from './components/Pages/Owner/Owners';
-import ContactUs from './components/Pages/ContactUs/ContactUs';
+// import Home from './components/Pages/Home/Home';
+// import CnWorld from './components/Pages/ConnectWorld/CnWorld';
+// import Products from './components/Pages/Products/Products';
+// import Owners from './components/Pages/Owner/Owners';
+// import ContactUs from './components/Pages/ContactUs/ContactUs';
 import Footer from './components/Pages/Footer/Footer';
 import Navbar from './components/Pages/Navbar/Navbar';
-import About from './components/Pages/About/About';
+// import About from './components/Pages/About/About';
 import { FaArrowCircleUp } from 'react-icons/fa';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import WHATSAPP_ICON from "./assets/Images/whatsappIcon.png"
 import Aos from 'aos';
-// import ProductsImgStore from './components/Pages/Products/ProductsImgStore';
+import ProductsImgStore from './components/Pages/Products/ProductsImgStore';
+import Dashboard from './Dashboard';
 
 function App() {
   // const [showProducts, setShowProducts] = useState(false)
@@ -63,13 +64,17 @@ function App() {
         </Routes> */}
         {/* {showProducts ? <ProductsImgStore /> : <> */}
         <Navbar />
-        <Home />
+        {/* <Home />
         <CnWorld />
         <Products />
         <Owners />
         <About handleWhatsAppClick={handleWhatsAppClick} />
-        <ContactUs />
+        <ContactUs /> */}
         {/* </>} */}
+        <Routes>
+          <Route path='/productsImgStore' element={<ProductsImgStore />} />
+          <Route path='/' element={<Dashboard />} />
+        </Routes>
         <Footer handleWhatsAppClick={handleWhatsAppClick} />
         <button id="arrowTopBtn" onClick={scrollToTop}><FaArrowCircleUp /></button>
         <button className='whatsapp-btn' onClick={handleWhatsAppClick}>

@@ -9,7 +9,7 @@ import navBarLogo from "../../../assets/Images/WhatsApp_Image_2024-01-28_at_14.5
 import "./footer.css"
 import ContactForm from '../Components/ContactForm'
 
-function Footer({handleWhatsAppClick}) {
+function Footer({ handleWhatsAppClick }) {
     return (
         <>
             <section id='footerSection'>

@@ -4,7 +4,7 @@ import containerImgForStrategy from "../../../assets/Images/containerForStrategy
 import mission from "../../../assets/Images/container.jpg"
 import "./about.css"
 
-function About({handleWhatsAppClick}) {
+function About({ handleWhatsAppClick }) {
     return (
         <>
             <section id='aboutUsSection' className='about-us-section'>

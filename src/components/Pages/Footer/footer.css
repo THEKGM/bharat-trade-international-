@@ -11,10 +11,10 @@
   text-align: center;
 }
 
-.footer-container #footerContent{
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
+.footer-container #footerContent {
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .social-links-container {
@@ -24,8 +24,8 @@
   flex-direction: column;
 }
 
-.company-info p{
-    text-align: justify;
+.company-info p {
+  text-align: justify;
 }
 
 .social-link {

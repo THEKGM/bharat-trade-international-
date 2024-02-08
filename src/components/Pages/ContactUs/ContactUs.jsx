@@ -38,8 +38,10 @@ function ContactUs() {
                                         <img src={CALL_ICON} alt="" />
                                     </div>
                                     <h5 data-aos="fade-left" data-aos-duration="1200">Call us:</h5>
-                                    <p className='mb-0' data-aos="flip-up" data-aos-duration="1200">+91 70419 14309</p>
-                                    <p className='mt-0' data-aos="flip-up" data-aos-duration="1200">+91 70417 76309</p>
+                                    <p data-aos="flip-up"><Link to="tel:+91 70419 14309" data-aos="flip-up" data-aos-duration="1200">+91 70419 14309</Link><br />
+                                        <Link to="tel:+91 70417 76309" data-aos="flip-up" data-aos-duration="1200">+91 70417 76309</Link></p>
+                                    {/* <p className='mb-0' data-aos="flip-up" data-aos-duration="1200">+91 70419 14309</p>
+                                    <p className='mt-0' data-aos="flip-up" data-aos-duration="1200">+91 70417 76309</p> */}
                                 </div>
                             </div>
                         </div>

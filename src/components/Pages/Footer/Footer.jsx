@@ -1,9 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import INSTAGRAM_ICON from "../../assets/svg/instagram.svg"
-// import FACEBOOK_ICON from "../../assets/svg/facebook.svg"
-// import TWITTER_X_ICON from "../../assets/svg/twitterX.svg"
-// import WHATSAPP_ICON from "../../assets/svg/whatsapp.svg"
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa"
 import navBarLogo from "../../../assets/Images/WhatsApp_Image_2024-01-28_at_14.54.41_534a55c3-removebg-preview.png"
 import "./footer.css"

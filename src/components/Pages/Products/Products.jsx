@@ -1,14 +1,12 @@
 import React from 'react'
-import productImg from "../../../assets/Images/ourStrategy.jpg"
 import "./products.css"
 import { useNavigate } from 'react-router-dom'
-// import ProductsImgStore from './ProductsImgStore';
-// import FRUIT_IMAGE from "../../../assets/Images/Products/Fruits/apples-3580560_1920.jpg"
+import { products } from '../../../Data/products';
 
 function Products() {
     const navigate = useNavigate();
-    const handleProductCategory = () => {
-        navigate("/productsImgStore")
+    const handleProductCategory = (subCategory, categoryName) => {
+        navigate("/productsImgStore", { state: [subCategory, categoryName] })
     }
     return (
         <>
@@ -20,69 +18,16 @@ function Products() {
                     </div>
                     <div className="text-center p-0">
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 p-0 m-0" id="productGrid">
-                            <div className="col product-item" data-aos="flip-left">
-                                <div onClick={handleProductCategory}>
-                                    <img src={productImg} className='img-fluid' alt="Product" />
-                                    {/* <h5>productName <small>productId</small></h5> */}
-                                    <span>Category</span>
-                                </div>
-                            </div>
-                            <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                <div>
-                                    <img src={productImg} className='img-fluid' alt="Product" />
-                                    {/* <h5>productName <small>productId</small></h5> */}
-                                    <span>Category</span>
-                                </div>
-                            </div>
-                            <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                <div>
-                                    <img src={productImg} className='img-fluid' alt="Product" />
-                                    {/* <h5>productName <small>productId</small></h5> */}
-                                    <span>Category</span>
-                                </div>
-                            </div>
-                            <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                <div>
-                                    <img src={productImg} className='img-fluid' alt="Product" />
-                                    {/* <h5>productName <small>productId</small></h5> */}
-                                    <span>Category</span>
-                                </div>
-                            </div>
-                            <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                <div>
-                                    <img src={productImg} className='img-fluid' alt="Product" />
-                                    {/* <h5>productName <small>productId</small></h5> */}
-                                    <span>Category</span>
-                                </div>
-                            </div>
-                            <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                <div>
-                                    <img src={productImg} className='img-fluid' alt="Product" />
-                                    {/* <h5>productName <small>productId</small></h5> */}
-                                    <span>Category</span>
-                                </div>
-                            </div>
-                            <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                <div>
-                                    <img src={productImg} className='img-fluid' alt="Product" />
-                                    {/* <h5>productName <small>productId</small></h5> */}
-                                    <span>Category</span>
-                                </div>
-                            </div>
-                            <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                <div>
-                                    <img src={productImg} className='img-fluid' alt="Product" />
-                                    {/* <h5>productName <small>productId</small></h5> */}
-                                    <span>Category</span>
-                                </div>
-                            </div>
-                            <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                <div>
-                                    <img src={productImg} className='img-fluid' alt="Product" />
-                                    {/* <h5>productName <small>productId</small></h5> */}
-                                    <span>Category</span>
-                                </div>
-                            </div>
+                            {products.map((value) => (
+                                <>
+                                    <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
+                                        <div onClick={() => handleProductCategory(value.subCategory, value.categoryName)}>
+                                            <img src={value.categoryImage} className='img-fluid' alt="Product" />
+                                            <span>{value.categoryName}</span>
+                                        </div>
+                                    </div>
+                                </>
+                            ))}
                         </div>
                     </div>
                 </div>

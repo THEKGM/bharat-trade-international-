@@ -6,6 +6,11 @@
   background-color: var(--background-color);
 }
 
+.product-images-section img {
+  width: 481.725px;
+  height: 325.413px;
+}
+
 #productGrid .product-item div {
   padding: 5px;
   background-color: #fff;
@@ -27,6 +32,11 @@
 
 #ProductsImgStore {
   padding: 30px 0;
+}
+
+#ProductsImgStore img {
+  /* width: 279.775px; */
+  height: 195px;
 }
 
 .AllProductsSpace .card-body a {

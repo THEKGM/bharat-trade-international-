@@ -20,10 +20,7 @@ function Home() {
         {/* <Link to='#connectWorldSpace'><button className='contact-btn Btn mx-3'>Get Started</button></Link> */}
         {/* </div> */}
 
-
-
-
-        <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleAutoPlaying" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src={SLIDER_IMG_ONE} className="d-block w-100 img-fluid" alt="..." />
@@ -35,11 +32,11 @@ function Home() {
               <img src={SLIDER_IMG_THREE} className="d-block w-100 img-fluid" alt="..." />
             </div>
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoPlaying" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             {/* <span className="visually-hidden">Previous</span> */}
           </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoPlaying" data-bs-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             {/* <span className="visually-hidden">Next</span> */}
           </button>

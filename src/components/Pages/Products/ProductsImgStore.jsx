@@ -1,30 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { FaInfo } from "react-icons/fa"
 
 function ProductsImgStore() {
+    const [subCategory, setSubCategory] = useState([])
+    const [categoryName, setCategoryName] = useState('')
+    const Location = useLocation();
+    useEffect(() => {
+        const data = Location.state;
+        setSubCategory(data[0]);
+        setCategoryName(data[1]);
+    }, [Location.state])
     return (
         <>
             <section id='ProductsImgStore'>
-                <div>ProductsImgStore</div>
-                <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable"></div>
-
-                <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Launch static backdrop modal
-                </button>
-
-                <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div className="modal-dialog">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h1 className="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div className="modal-body">
-                                ...
-                            </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary">Understood</button>
-                            </div>
+                <div className='containerAlignSpace'>
+                    <div className="AllProductsSpace">
+                        <div className='my-3 py-3 text-center bg-light'><h3 className='text-uppercase mb-0' style={{ fontFamily: 'auto', fontWeight: '600' }}>{categoryName || "Category Name"}</h3></div>
+                        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-0 p-0">
+                            {subCategory && subCategory?.map((item) => (
+                                <>
+                                    <div className="col">
+                                        <div className="card border-0 shadow">
+                                            <img src={item.subCatProductImage} className='img-fluid' alt={item.subCatProductName} />
+                                            <div className="card-body bg-light border">
+                                                <h5 className="card-title">{item.subCatProductName || "Title"}</h5>
+                                                <Link href="#" className=""><FaInfo /> Read More</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </>
+                            ))}
                         </div>
                     </div>
                 </div>

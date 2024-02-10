@@ -24,6 +24,7 @@ function Navbar() {
                                     <Link className="nav-link" to="#productImagesSection">Products</Link>
                                     <Link className="nav-link" to="#aboutUsSection">About</Link>
                                     <Link className="nav-link" to="#contactSection">Contact Us</Link>
+                                    {/* <Link className="nav-link" to="/admin">I AM ADMIN</Link> */}
                                 </div>
                             </div>
                         </div>

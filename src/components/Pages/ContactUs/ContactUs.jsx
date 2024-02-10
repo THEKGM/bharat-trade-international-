@@ -12,34 +12,36 @@ function ContactUs() {
                 <div className='containerAlignSpace'>
                     <div className='contactSpace'>
                         <div className='contact-info'>
-                            <h2>Contact Us</h2>
-                            <hr className="contact-divider" />
-                            <p>"Join us in celebrating and sharing the bounty of India's fertile lands while <br /> supporting sustainable farming practices and local communities."</p>
+                            <h2 data-aos="flip-down" data-aos-duration="1200">Contact Us</h2>
+                            <hr className="contact-divider" data-aos="zoom-in" data-aos-duration="1200" />
+                            <p data-aos="flip-up" data-aos-duration="1200">"Join us in celebrating and sharing the bounty of India's fertile lands while <br /> supporting sustainable farming practices and local communities."</p>
                         </div>
                         <div className='contact-details'>
                             <div className="row" id="contactDetailsRow">
                                 <div className="col-md-4">
-                                    <div className="contact-icon" style={{ padding: '10px 15px' }}>
+                                    <div className="contact-icon" style={{ padding: '10px 15px' }} data-aos="zoom-out-up" data-aos-duration="1200">
                                         <img src={LOCATION_ICON} alt="" />
                                     </div>
-                                    <h5>Address:</h5>
-                                    <p>Amroli, Surat,<br /> Gujarat, India - 394107</p>
+                                    <h5 data-aos="fade-right" data-aos-duration="1200">Address:</h5>
+                                    <p data-aos="flip-up" data-aos-duration="1200">Amroli, Surat,<br /> Gujarat, India - 394107</p>
                                 </div>
                                 <div className="col-md-4">
-                                    <div className="contact-icon">
+                                    <div className="contact-icon" data-aos="zoom-out-up" data-aos-duration="1200">
                                         <img src={MAIL_ICON} alt="" />
                                     </div>
-                                    <h5>Email:</h5>
-                                    <p><Link to="mailto:bharattradeinternational@gmail.com?subject=Demo Mail!">bharattradeinternational@gmail.com</Link><br />
+                                    <h5 data-aos="zoom-in" data-aos-duration="1200">Email:</h5>
+                                    <p data-aos="flip-up" data-aos-duration="1200"><Link to="mailto:bharattradeinternational@gmail.com?subject=Demo Mail!">bharattradeinternational@gmail.com</Link><br />
                                         <Link to="mailto:btinternational22@gmail.com?subject=testing Mail!">btinternational22@gmail.com</Link></p>
                                 </div>
                                 <div className="col-md-4">
-                                    <div className="contact-icon">
+                                    <div className="contact-icon" data-aos="zoom-out-up" data-aos-duration="1200">
                                         <img src={CALL_ICON} alt="" />
                                     </div>
-                                    <h5>Call us:</h5>
-                                    <p className='mb-0'>+91 70419 14309</p>
-                                    <p className='mt-0'>+91 70417 76309</p>
+                                    <h5 data-aos="fade-left" data-aos-duration="1200">Call us:</h5>
+                                    <p data-aos="flip-up"><Link to="tel:+91 70419 14309" data-aos="flip-up" data-aos-duration="1200">+91 70419 14309</Link><br />
+                                        <Link to="tel:+91 70417 76309" data-aos="flip-up" data-aos-duration="1200">+91 70417 76309</Link></p>
+                                    {/* <p className='mb-0' data-aos="flip-up" data-aos-duration="1200">+91 70419 14309</p>
+                                    <p className='mt-0' data-aos="flip-up" data-aos-duration="1200">+91 70417 76309</p> */}
                                 </div>
                             </div>
                         </div>

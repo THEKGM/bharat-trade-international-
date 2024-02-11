@@ -6,7 +6,8 @@ import { products } from '../../../Data/products';
 function Products() {
     const navigate = useNavigate();
     const handleProductCategory = (subCategory, categoryName) => {
-        navigate("/productsImgStore", { state: [subCategory, categoryName] })
+        localStorage.setItem('category', categoryName)
+        navigate("/productsImgStore", { state: subCategory })
     }
     return (
         <>

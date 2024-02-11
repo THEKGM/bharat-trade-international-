@@ -1,6 +1,6 @@
 /* Home css start------------------- */
 
-/* .home-section {
+.home-section {
   position: relative;
   background-image: url("../../../assets/Images/portHome.jpg");
   background-repeat: no-repeat;
@@ -9,12 +9,12 @@
   background-position: center center;
   background-size: cover;
   box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.55);
-} */
+}
 
-/* .home-section img {
+.home-section img {
   width: 100%;
   height: 100vh;
-} */
+}
 
 .home-section .content-container {
   width: 100%;

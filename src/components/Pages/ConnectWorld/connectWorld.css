@@ -1,5 +1,22 @@
 /* ConnectWorld css start------------------- */
 
+/* Welcome Space start---- */
+
+.welcomeSpace {
+  padding: 20px;
+}
+
+.welcomeSpace h2 {
+  margin: 13px 0;
+}
+
+.welcomeSpace p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Welcome Space end---- */
+
 #connectWorldSpace {
   background-color: var(--background-color);
   padding: 30px 0;

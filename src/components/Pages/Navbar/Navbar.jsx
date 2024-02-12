@@ -1,8 +1,10 @@
 import React from 'react'
 import { HashLink as Link } from "react-router-hash-link"
+import { motion, useScroll } from "framer-motion"
 import "./navbar.css"
 
 function Navbar() {
+    const { scrollYProgress } = useScroll();
     return (
         <>
             <section id='navSec' className='sticky-top'>
@@ -20,16 +22,17 @@ function Navbar() {
                                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div className="offcanvas-body justify-content-end">
-                                    <Link className="nav-link active" aria-current="page" to="/#homeSection">Home</Link>
-                                    <Link className="nav-link" to="/#productImagesSection">Products</Link>
-                                    <Link className="nav-link" to="/#aboutUsSection">About</Link>
-                                    <Link className="nav-link" to="/#contactSection">Contact Us</Link>
+                                    <Link className="nav-link active" aria-current="page" to="#homeSection">Home</Link>
+                                    <Link className="nav-link" to="#productImagesSection">Products</Link>
+                                    <Link className="nav-link" to="#aboutUsSection">About</Link>
+                                    <Link className="nav-link" to="#contactSection">Contact Us</Link>
                                     {/* <Link className="nav-link" to="/admin">I AM ADMIN</Link> */}
                                 </div>
                             </div>
                         </div>
                     </nav>
                 </div>
+                <motion.div style={{ scaleX: scrollYProgress }} className='progressBar' />
             </section>
         </>
     )

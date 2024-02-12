@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import emailjs from '@emailjs/browser';
 import "./contactForm.css"
 
 function ContactForm(props) {
@@ -8,6 +9,12 @@ function ContactForm(props) {
         phnNumber: '',
         message: '',
     });
+    const [loading, setLoading] = useState(false)
+    const contactForm = useRef();
+
+    useEffect(() => {
+        emailjs.init("0QCdxG7Z_J65nDbh8")
+    }, [])
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -17,17 +24,31 @@ function ContactForm(props) {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Form Data:', formData);
+        const serviceId = "service_threwit";
+        const templateId = "template_4lc67pq";
+        try {
+            setLoading(true);
+            await emailjs.send(serviceId, templateId, {
+                user_name: formData.name,
+                user_email: formData.email,
+                user_contactNumber: formData.phnNumber,
+                user_message: formData.message,
+            });
+            alert("Email successfully sent to BTI!")
+        } catch (error) {
+            console.log("error to sending", error)
+        } finally {
+            setFormData('')
+            setLoading(false)
+        }
     };
     return (
         <>
-            {/* <section> */}
             <div className="contact-form-container">
-                {/* <h2 className='mb-3'>Contact {props.companyName}</h2> */}
                 <h2 className='mb-3' data-aos="zoom-out-up" data-aos-duration="1200">Contact Form</h2>
-                <form onSubmit={handleSubmit}>
+                <form ref={contactForm} onSubmit={handleSubmit}>
                     <input
                         type="text"
                         id="name"
@@ -67,10 +88,10 @@ function ContactForm(props) {
                         required
                         data-aos="flip-down" data-aos-duration="1200"
                     ></textarea>
+                    {loading && "Email Sending...."}
                     <button type="submit" data-aos="flip-down" data-aos-duration="1200">Submit</button>
                 </form>
             </div>
-            {/* </section> */}
         </>
     )
 }

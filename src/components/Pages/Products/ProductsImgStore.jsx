@@ -6,11 +6,18 @@ function ProductsImgStore() {
     const [subCategory, setSubCategory] = useState([])
     const [categoryName, setCategoryName] = useState('')
     const Location = useLocation();
+
     useEffect(() => {
         const data = Location.state;
-        setSubCategory(data[0]);
-        setCategoryName(data[1]);
-    }, [Location.state])
+        setSubCategory(data)
+        if (subCategory) {
+            const category = localStorage.getItem('category');
+            setCategoryName(category);
+        } else {
+            setCategoryName('')
+        }
+    }, [])
+
     return (
         <>
             <section id='ProductsImgStore'>

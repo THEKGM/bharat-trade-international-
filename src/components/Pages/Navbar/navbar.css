@@ -3,6 +3,8 @@
 #navSec {
   width: 100%;
   background-color: #fff;
+  position: fixed;
+  top: 0;
 }
 
 .offcanvas {
@@ -29,6 +31,12 @@
 @media screen and (max-width: 991px) {
   .offcanvas-body {
     background-color: bisque;
+  }
+}
+
+@media screen and (max-width: 591px) {
+  .offcanvas {
+    width: 70% !important;
   }
 }
 

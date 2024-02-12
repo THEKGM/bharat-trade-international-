@@ -24,7 +24,7 @@ function Products() {
                                     <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
                                         <div onClick={() => handleProductCategory(value.subCategory, value.categoryName)}>
                                             <img src={value.categoryImage} className='img-fluid' alt="Product" />
-                                            <span>{value.categoryName}</span>
+                                            <div>{value.categoryName}</div>
                                         </div>
                                     </div>
                                 </>

@@ -10,7 +10,7 @@ function CnWorld() {
                 <div className="containerAlignSpace text-center">
                     <div className='welcomeSpace'>
                         <h2 data-aos="zoom-in" data-aos-duration="800">Welcome to the Bharat Trade International</h2>
-                        <p data-aos="fade-right" data-aos-duration="800">Welcome for<b> "Embark on a Global Journey with Us"!</b> Step into our world of international trade and embark on a journey to global success.</p>
+                        <p data-aos="fade-right" data-aos-duration="800">Welcome for<b> "Embark on a Global Journey with Us"!</b> Step into our  world of international trade<br /> and embark on a journey to global success.</p>
                         <p data-aos="fade-left" data-aos-duration="800">Discover how we're redefining the export industry, one partnership at a time. From sourcing the finest products to navigating complex regulations, we're here to streamline your export experience and elevate your business to new heights.</p>
                         <p data-aos="fade-up" data-aos-duration="800"> Join us as we traverse borders, forge connections, and unlock opportunities in every corner of the globe. Together, let's build bridges, break barriers, and make your export dreams a reality. Welcome aboard!</p>
                     </div>

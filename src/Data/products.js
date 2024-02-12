@@ -75,14 +75,14 @@ export const products = [
         ]
     },
     {
-        "categoryId": 'MSL03',
-        "categoryName": "Masalas",
-        "categoryImage": CHILLIPOWDER_IMAGE,
+        "categoryId": 'SPI03',
+        "categoryName": "Spices",
+        "categoryImage": CINNAMON_IMAGE,
         "subCategory": [
-            { "subCatProductId": "CRi_MSL301", "subCatProductName": "Chilli Powder", "subCatProductImage": CHILLIPOWDER_IMAGE },
-            { "subCatProductId": "CNi_MSL302", "subCatProductName": "Cinnamon", "subCatProductImage": CINNAMON_IMAGE },
-            { "subCatProductId": "SSi_MSL303", "subCatProductName": "Spices", "subCatProductImage": SPICES_IMAGE },
-            { "subCatProductId": "TCi_MSL304", "subCatProductName": "Turmaric", "subCatProductImage": TURMARIC_IMAGE },
+            { "subCatProductId": "CRi_SPI301", "subCatProductName": "Chilli Powder", "subCatProductImage": CHILLIPOWDER_IMAGE },
+            { "subCatProductId": "CNi_SPI302", "subCatProductName": "Cinnamon", "subCatProductImage": CINNAMON_IMAGE },
+            { "subCatProductId": "SSi_SPI303", "subCatProductName": "Spices", "subCatProductImage": SPICES_IMAGE },
+            { "subCatProductId": "TCi_SPI304", "subCatProductName": "Turmaric", "subCatProductImage": TURMARIC_IMAGE },
         ]
     },
     {

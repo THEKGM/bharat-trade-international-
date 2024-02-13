@@ -36,11 +36,16 @@ function ContactForm(props) {
                 user_contactNumber: formData.phnNumber,
                 user_message: formData.message,
             });
+            setFormData({
+                name: '',
+                email: '',
+                phnNumber: '',
+                message: '',
+            });
             alert("Email successfully sent to BTI!")
         } catch (error) {
             console.log("error to sending", error)
         } finally {
-            setFormData('')
             setLoading(false)
         }
     };

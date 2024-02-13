@@ -5,6 +5,7 @@
 
 //Fruits
 // import APPlE_IMAGE from "../assets/Images/Products/Fruits/apples-Fruits.jpg"
+import MIX_FRUITS_IMAGE from "../assets/Images/Products/Fruits/fresh-fruits-2305192_1920.jpg"
 import APPlE_IMAGE from "../assets/Images/Products/Fruits/fruit-3860991_1920.jpg"
 import BANANA_IMAGE from "../assets/Images/Products/Fruits/banana-Fruits.jpg"
 import BREAKFAST_IMAGE from "../assets/Images/Products/Fruits/breakfast-Fruits.jpg"
@@ -15,13 +16,14 @@ import PINEAPPLE_IMAGE from "../assets/Images/Products/Fruits/pineapple-Fruits.j
 import POMEGRANATE_IMAGE from "../assets/Images/Products/Fruits/pomegranate-Fruits.jpg"
 
 //Vegetables
+import MIX_VEGETABLES_IMAGE from "../assets/Images/Products/mix-vegetable.jpg";
 import ONION_IMAGE from "../assets/Images/Products/Vegetables/onion-Vegetables.jpg";
 // import CUCUMBER_IMAGE from "../assets/Images/Products/Vegetables/cucumber-Vegetables.jpg";
 import CUCUMBER_IMAGE from "../assets/Images/Products/Vegetables/cucumber-78789_1920.jpg";
 import DRUMSTICK_IMAGE from "../assets/Images/Products/Vegetables/drumstick-Vegetables.jpg";
 import FLOWER_IMAGE from "../assets/Images/Products/Vegetables/flower-Vegetables.jpg";
 import POTATOES_IMAGE from "../assets/Images/Products/Vegetables/potatoes-Vegetables.jpg";
-import RED_ONIONS_IMAGE from "../assets/Images/Products/Vegetables/red-onions-Vegetable-.jpg";
+import LEMONS_IMAGE from "../assets/Images/Products/Vegetables/lemons-Vegetables.jpg";
 import SERRANO_PEPPERS_IMAGE from "../assets/Images/Products/Vegetables/serrano-peppers-Vegetables.jpg";
 import TEXTURES_IMAGE from "../assets/Images/Products/Vegetables/textures-Vegetables.jpg";
 // import TOMATOES_IMAGE from "../assets/Images/Products/Vegetables/tomatoes-Vegetables.jpg";
@@ -29,14 +31,16 @@ import TOMATOES_IMAGE from "../assets/Images/Products/Vegetables/tomatoes-255980
 // import WHITE_CABBAGE_IMAGE from "../assets/Images/Products/Vegetables/white-cabbage-Vegetables.jpg";
 import WHITE_CABBAGE_IMAGE from "../assets/Images/Products/Vegetables/cabbage-3722517_1920.jpg";
 
-//Masalas
+//Spices
+import SPICES_IMAGE from "../assets/Images/Products/spices.jpg";
 import CHILLIPOWDER_IMAGE from "../assets/Images/Products/Masalas/chilliPowder-Masalas.jpg";
 import CINNAMON_IMAGE from "../assets/Images/Products/Masalas/cinnamon-Masalas.jpg";
-import SPICES_IMAGE from "../assets/Images/Products/Masalas/spices-Masalas.jpg";
+import SPICES_MASALA_IMAGE from "../assets/Images/Products/Masalas/spices-Masalas.jpg";
 import TURMARIC_IMAGE from "../assets/Images/Products/Masalas/turmaric-Masalas.jpg";
 
 //Dry Fruits
-import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almonds-DryFruits.jpg";
+// import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almonds-DryFruits.jpg";
+import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almond-3849414_1920.jpg";
 import CHSHEW_IMAGE from "../assets/Images/Products/DryFruits/chshew-DryFruits.jpg";
 import MIXDRY_IMAGE from "../assets/Images/Products/DryFruits/mixDry-Fruits.jpg";
 import RAISINS_IMAGE from "../assets/Images/Products/DryFruits/raisins-DryFruits.jpg";
@@ -46,7 +50,7 @@ export const products = [
     {
         "categoryId": 'FRS01',
         "categoryName": "Fruits",
-        "categoryImage": BREAKFAST_IMAGE,
+        "categoryImage": MIX_FRUITS_IMAGE,
         "subCategory": [
             { "subCatProductId": "ASi_FRS101", "subCatProductName": "Apple", "subCatProductImage": APPlE_IMAGE },
             { "subCatProductId": "BAi_FRS102", "subCatProductName": "Banana", "subCatProductImage": BANANA_IMAGE },
@@ -60,14 +64,14 @@ export const products = [
     {
         "categoryId": 'VEG02',
         "categoryName": "Vegetables",
-        "categoryImage": ONION_IMAGE,
+        "categoryImage": MIX_VEGETABLES_IMAGE,
         "subCategory": [
             { "subCatProductId": "ONi_VEG201", "subCatProductName": "Onion", "subCatProductImage": ONION_IMAGE },
             { "subCatProductId": "CRi_VEG202", "subCatProductName": "Cucumber", "subCatProductImage": CUCUMBER_IMAGE },
             { "subCatProductId": "DKi_VEG203", "subCatProductName": "Drumstick", "subCatProductImage": DRUMSTICK_IMAGE },
             { "subCatProductId": "FRi_VEG204", "subCatProductName": "Flower", "subCatProductImage": FLOWER_IMAGE },
             { "subCatProductId": "PSi_VEG205", "subCatProductName": "Potatoes", "subCatProductImage": POTATOES_IMAGE },
-            { "subCatProductId": "RSi_VEG206", "subCatProductName": "Red Onions", "subCatProductImage": RED_ONIONS_IMAGE },
+            { "subCatProductId": "LSi_VEG206", "subCatProductName": "Lemons", "subCatProductImage": LEMONS_IMAGE },
             { "subCatProductId": "SSi_VEG207", "subCatProductName": "Serrano Peppers", "subCatProductImage": SERRANO_PEPPERS_IMAGE },
             { "subCatProductId": "TSi_VEG208", "subCatProductName": "Textures", "subCatProductImage": TEXTURES_IMAGE },
             { "subCatProductId": "TMi_VEG209", "subCatProductName": "Tomatoes", "subCatProductImage": TOMATOES_IMAGE },
@@ -77,11 +81,11 @@ export const products = [
     {
         "categoryId": 'SPI03',
         "categoryName": "Spices",
-        "categoryImage": CINNAMON_IMAGE,
+        "categoryImage": SPICES_IMAGE,
         "subCategory": [
             { "subCatProductId": "CRi_SPI301", "subCatProductName": "Chilli Powder", "subCatProductImage": CHILLIPOWDER_IMAGE },
             { "subCatProductId": "CNi_SPI302", "subCatProductName": "Cinnamon", "subCatProductImage": CINNAMON_IMAGE },
-            { "subCatProductId": "SSi_SPI303", "subCatProductName": "Spices", "subCatProductImage": SPICES_IMAGE },
+            { "subCatProductId": "SMi_SPI303", "subCatProductName": "Spices", "subCatProductImage": SPICES_MASALA_IMAGE },
             { "subCatProductId": "TCi_SPI304", "subCatProductName": "Turmaric", "subCatProductImage": TURMARIC_IMAGE },
         ]
     },

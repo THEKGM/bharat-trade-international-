@@ -8,6 +8,7 @@ function Products() {
     const handleProductCategory = (subCategory, categoryName) => {
         localStorage.setItem('category', categoryName)
         navigate("/productsImgStore", { state: subCategory })
+        window.location.reload();
     }
     return (
         <>

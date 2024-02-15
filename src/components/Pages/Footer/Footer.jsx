@@ -20,7 +20,7 @@ function Footer({ handleWhatsAppClick }) {
                                 <div className='social-links'>
                                     <Link href="#" target="_blank" rel="noopener noreferrer" className="social-link"><FaFacebook /></Link>
                                     <Link href="#" target="_blank" rel="noopener noreferrer" className="social-link"><FaTwitter /></Link>
-                                    <Link href="#" target="_blank" rel="noopener noreferrer" className="social-link"><FaInstagram /></Link>
+                                    <Link to="https://www.instagram.com/bharattradeinternational?utm_source=qr&igsh=MTVqdHJ1MjBnOXRveQ==" target="_blank" rel="noopener noreferrer" className="social-link"><FaInstagram /></Link>
                                     <Link href="#" target="_blank" rel="noopener noreferrer" className="social-link" onClick={handleWhatsAppClick}><FaWhatsapp /></Link>
                                 </div>
                             </div>

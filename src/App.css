@@ -88,7 +88,7 @@ button a {
 .whatsapp-btn {
   border: none;
   border-radius: 50%;
-  background-color: green;
+  background-color: transparent;
   position: fixed;
   bottom: 25px;
   left: 20px;

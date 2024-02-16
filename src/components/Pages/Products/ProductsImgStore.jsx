@@ -31,23 +31,50 @@ function ProductsImgStore() {
                     <div className="AllProductsSpace">
                         <div className='my-3 py-3 text-center bg-light'><h3 className='text-uppercase mb-0' style={{ fontFamily: 'auto', fontWeight: '600' }}>{categoryName || "Category Name"}</h3></div>
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-0 p-0">
-                            {subCategory && subCategory?.map((item) => (
+                            {subCategory && subCategory?.map((item, index) => (
                                 <>
                                     <div className="col">
                                         <div className="card border-0 shadow">
                                             <img src={item.subCatProductImage} className='img-fluid' alt={item.subCatProductName} />
                                             <div className="card-body bg-light border">
                                                 <h5 className="card-title">{item.subCatProductName || "Title"}</h5>
-                                                <Link href="#" className="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><FaInfo /> Read More</Link>
-                                                <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                    <div className="modal-dialog">
+                                                <Link href="#" className="" data-bs-toggle="modal" data-bs-target={`#staticBackdrop${index}`}><FaInfo /> Read More</Link>
+                                                <div className="modal fade" id={`staticBackdrop${index}`} data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                    <div className="modal-dialog m-0">
                                                         <div className="modal-content">
                                                             <div className="modal-header">
                                                                 <h1 className="modal-title fs-5" id="staticBackdropLabel">{item.subCatProductName}</h1>
                                                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div className="modal-body">
-                                                                This is {item.subCatProductName}
+                                                                <div className='row d-flex align-items-center'>
+                                                                    <div className='col-md-6'>
+                                                                        <img src={item.subCatProductImage} width={300} height={100} className='img-fluid rounded' alt={item.subCatProductName} />
+                                                                    </div>
+                                                                    <div className='modelDetails col-md-6'>
+                                                                        {/* <h5 className='text-center mb-3 p-2 text-white rounded' style={{ backgroundColor: '#e7b323d1' }}>{item.subCatProductName}</h5> */}
+                                                                        <table>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Variety</td>
+                                                                                    <td>Cavendish</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>HS Code</td>
+                                                                                    <td>#111222</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Size</td>
+                                                                                    <td>8 To 11</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Pkg.</td>
+                                                                                    <td>7 kg/13 kg/ 18 kg</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div className="modal-footer">
                                                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>

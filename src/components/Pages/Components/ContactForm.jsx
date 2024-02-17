@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
 import "./contactForm.css"
 
-function ContactForm(props) {
+function ContactForm() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -10,10 +11,16 @@ function ContactForm(props) {
         message: '',
     });
     const [loading, setLoading] = useState(false)
+    const [emailError, setEmailError] = useState('');
+    const [isCustomProduct, setIsCustomProduct] = useState('Your Message *');
     const contactForm = useRef();
 
     useEffect(() => {
-        emailjs.init("0QCdxG7Z_J65nDbh8")
+        emailjs.init("0QCdxG7Z_J65nDbh8");
+        const IsCustomProduct = sessionStorage.getItem('IsCustomProduct');
+        if (IsCustomProduct) {
+            setIsCustomProduct('Describe Your Choice, and Fill the Form');
+        }
     }, [])
 
     const handleChange = (e) => {
@@ -24,10 +31,21 @@ function ContactForm(props) {
         }));
     };
 
+    const validateEmail = (email) => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const serviceId = "service_threwit";
         const templateId = "template_4lc67pq";
+
+        if (!validateEmail(formData.email)) {
+            setEmailError('Please enter a valid email address');
+            return;
+        }
+
         try {
             setLoading(true);
             await emailjs.send(serviceId, templateId, {
@@ -42,15 +60,32 @@ function ContactForm(props) {
                 phnNumber: '',
                 message: '',
             });
-            alert("Email successfully sent to BTI!")
+            // alert("Email successfully sent to BTI!")
+            toast.success('Email successfully sent to BTI!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                // transition: Bounce,
+            });
         } catch (error) {
             console.log("error to sending", error)
         } finally {
             setLoading(false)
         }
     };
+
+    useEffect(() => {
+        sessionStorage.removeItem('IsCustomProduct')
+    }, [])
+
     return (
         <>
+            <ToastContainer />
             <div className="contact-form-container">
                 <h2 className='mb-3' data-aos="zoom-out-up" data-aos-duration="1200">Contact Form</h2>
                 <form ref={contactForm} onSubmit={handleSubmit}>
@@ -74,6 +109,7 @@ function ContactForm(props) {
                         required
                         data-aos="flip-down" data-aos-duration="1200"
                     />
+                    {emailError && <p className="error-message">{emailError}</p>}
                     <input
                         type="tel"
                         id="phnNumber"
@@ -87,7 +123,7 @@ function ContactForm(props) {
                     <textarea
                         id="message"
                         name="message"
-                        placeholder='Your message*'
+                        placeholder={isCustomProduct}
                         value={formData.message}
                         onChange={handleChange}
                         required

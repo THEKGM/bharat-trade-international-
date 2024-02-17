@@ -10,6 +10,7 @@
   /* width: 481.725px; */
   width: 100%;
   height: 325.413px;
+  object-fit: cover;
 }
 
 #productGrid .product-item div {

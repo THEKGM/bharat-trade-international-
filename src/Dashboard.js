@@ -11,7 +11,7 @@ function Dashboard() {
         // Replace 'phoneNumber' with your actual WhatsApp number
         const phoneNumber = '7041914309';
         // const defaultMessage = encodeURIComponent("Hello, I'm interested in your services.");
-        const defaultMessage = encodeURIComponent("Hello! I'm exploring your website and would love to learn more about your products/services. Can you provide more information?");
+        const defaultMessage = encodeURIComponent("Hello! I'm interested in booking a 15-minute free consultation. Can you please provide more information?");
         const url = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
         window.open(url, '_blank');
     };

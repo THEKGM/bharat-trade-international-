@@ -5,7 +5,7 @@
 
 //Fruits
 // import APPlE_IMAGE from "../assets/Images/Products/Fruits/apples-Fruits.jpg"
-import MIX_FRUITS_IMAGE from "../assets/Images/Products/Fruits/fresh-fruits-2305192_1920.jpg"
+import MIX_FRUITS_IMAGE from "../assets/Images/Products/Fruits/Mix-Fruits.jpg"
 import APPlE_IMAGE from "../assets/Images/Products/Fruits/fruit-3860991_1920.jpg"
 import BANANA_IMAGE from "../assets/Images/Products/Fruits/banana-Fruits.jpg"
 import BREAKFAST_IMAGE from "../assets/Images/Products/Fruits/breakfast-Fruits.jpg"
@@ -14,6 +14,7 @@ import CHERRIES_IMAGE from "../assets/Images/Products/Fruits/cherries-Fruits.jpg
 import ORANGE_IMAGE from "../assets/Images/Products/Fruits/oranges-1995056_1920.jpg"
 import PINEAPPLE_IMAGE from "../assets/Images/Products/Fruits/pineapple-Fruits.jpg"
 import POMEGRANATE_IMAGE from "../assets/Images/Products/Fruits/pomegranate-Fruits.jpg"
+import STRAWBERRY_IMAGE from "../assets/Images/Products/Fruits/strawberries-Fruits.jpg"
 
 //Vegetables
 import MIX_VEGETABLES_IMAGE from "../assets/Images/Products/mix-vegetable.jpg";
@@ -41,10 +42,16 @@ import TURMARIC_IMAGE from "../assets/Images/Products/Masalas/turmaric-Masalas.j
 //Dry Fruits
 // import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almonds-DryFruits.jpg";
 import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almond-3849414_1920.jpg";
-import CHSHEW_IMAGE from "../assets/Images/Products/DryFruits/chshew-DryFruits.jpg";
+import CASHEW_IMAGE from "../assets/Images/Products/DryFruits/cashew-DryFruits.jpg";
 import MIXDRY_IMAGE from "../assets/Images/Products/DryFruits/mixDry-Fruits.jpg";
 import RAISINS_IMAGE from "../assets/Images/Products/DryFruits/raisins-DryFruits.jpg";
 import WALNUTS_IMAGE from "../assets/Images/Products/DryFruits/walnuts-DryFruits.jpg";
+import FIGS_IMAGE from "../assets/Images/Products/DryFruits/figs-DryFruits.jpg";
+import GROUND_NUTS_IMAGE from "../assets/Images/Products/DryFruits/groundNuts.jpg";
+import PISTACHIO_IMAGE from "../assets/Images/Products/DryFruits/pistachio-Fruits.jpg";
+
+//Other Product
+import OTHER_IMAGE from "../assets/Images/OtherProduct.jpg"
 
 export const products = [
     {
@@ -59,6 +66,7 @@ export const products = [
             { "subCatProductId": "OEi_FRS105", "subCatProductName": "Orange", "subCatProductImage": ORANGE_IMAGE },
             { "subCatProductId": "PEi_FRS106", "subCatProductName": "Pineapple", "subCatProductImage": PINEAPPLE_IMAGE },
             { "subCatProductId": "PGi_FRS107", "subCatProductName": "Pomegranate", "subCatProductImage": POMEGRANATE_IMAGE },
+            { "subCatProductId": "SYi_FRS108", "subCatProductName": "Strawberries", "subCatProductImage": STRAWBERRY_IMAGE },
         ]
     },
     {
@@ -95,10 +103,13 @@ export const products = [
         "categoryImage": ALMONDS_IMAGE,
         "subCategory": [
             { "subCatProductId": "ASi_DRYFRU401", "subCatProductName": "Almonds", "subCatProductImage": ALMONDS_IMAGE },
-            { "subCatProductId": "CWi_DRYFRU402", "subCatProductName": "Chshew", "subCatProductImage": CHSHEW_IMAGE },
+            { "subCatProductId": "CWi_DRYFRU402", "subCatProductName": "Cashew", "subCatProductImage": CASHEW_IMAGE },
             { "subCatProductId": "MYi_DRYFRU403", "subCatProductName": "Mix Dry Fruits", "subCatProductImage": MIXDRY_IMAGE },
             { "subCatProductId": "RSi_DRYFRU404", "subCatProductName": "Raisins", "subCatProductImage": RAISINS_IMAGE },
-            { "subCatProductId": "WS_DRYFRU405", "subCatProductName": "Walnuts", "subCatProductImage": WALNUTS_IMAGE },
+            { "subCatProductId": "WSi_DRYFRU405", "subCatProductName": "Walnuts", "subCatProductImage": WALNUTS_IMAGE },
+            { "subCatProductId": "GSi_DRYFRU406", "subCatProductName": "Ground Nuts", "subCatProductImage": GROUND_NUTS_IMAGE },
+            { "subCatProductId": "POi_DRYFRU407", "subCatProductName": "Pistachio", "subCatProductImage": PISTACHIO_IMAGE },
+            { "subCatProductId": "FGi_DRYFRU408", "subCatProductName": "Figs", "subCatProductImage": FIGS_IMAGE },
         ]
     },
     // {
@@ -145,15 +156,9 @@ export const products = [
     //         { "subCatProductId": "ASi_FRS01", "subCatProductName": "sampleProduct", "subCatProductImage": "sampleImage" },
     //     ]
     // },
-    // {
-    //     "categoryId": 1,
-    //     "categoryName": "Fruits",
-    //     "subCategory": [
-    //         { "subCatProductId": "ASi_FRS01", "subCatProductName": "sampleProduct", "subCatProductImage": "sampleImage" },
-    //         { "subCatProductId": "ASi_FRS01", "subCatProductName": "sampleProduct", "subCatProductImage": "sampleImage" },
-    //         { "subCatProductId": "ASi_FRS01", "subCatProductName": "sampleProduct", "subCatProductImage": "sampleImage" },
-    //         { "subCatProductId": "ASi_FRS01", "subCatProductName": "sampleProduct", "subCatProductImage": "sampleImage" },
-    //         { "subCatProductId": "ASi_FRS01", "subCatProductName": "sampleProduct", "subCatProductImage": "sampleImage" },
-    //     ]
-    // }
+    {
+        "categoryId": 'USR05',
+        "categoryName": "Enter Your Own Product",
+        "categoryImage": OTHER_IMAGE,
+    }
 ];

@@ -31,7 +31,6 @@ function App() {
   }
 
   const handleWhatsAppClick = () => {
-    // Replace 'phoneNumber' with your actual WhatsApp number
     const phoneNumber = '7041914309';
     // const defaultMessage = encodeURIComponent("Hello, I'm interested in your services.");
     const defaultMessage = encodeURIComponent("Hello! I'm exploring your website and would love to learn more about your products/services. Can you provide more information?");

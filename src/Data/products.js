@@ -41,6 +41,7 @@ import TURMARIC_IMAGE from "../assets/Images/Products/Masalas/turmaric-Masalas.j
 
 //Dry Fruits
 // import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almonds-DryFruits.jpg";
+import MIX_DRY_FRUITS_IMAGE from "../assets/Images/Products/DryFruits/nuts-mixFruits.jpg";
 import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almond-3849414_1920.jpg";
 import CASHEW_IMAGE from "../assets/Images/Products/DryFruits/cashew-DryFruits.jpg";
 import MIXDRY_IMAGE from "../assets/Images/Products/DryFruits/mixDry-Fruits.jpg";
@@ -100,7 +101,7 @@ export const products = [
     {
         "categoryId": 'DRYFRU04',
         "categoryName": "Dry Fruits",
-        "categoryImage": ALMONDS_IMAGE,
+        "categoryImage": MIX_DRY_FRUITS_IMAGE,
         "subCategory": [
             { "subCatProductId": "ASi_DRYFRU401", "subCatProductName": "Almonds", "subCatProductImage": ALMONDS_IMAGE },
             { "subCatProductId": "CWi_DRYFRU402", "subCatProductName": "Cashew", "subCatProductImage": CASHEW_IMAGE },

@@ -24,4 +24,21 @@
   text-align: justify;
 }
 
+.carousel-item img {
+  filter: none;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background-color: var(--background-color) !important;
+}
+
+.carousel-control-prev {
+  left: 10px !important;
+}
+
+.carousel-control-next {
+  right: 10px !important;
+}
+
 /* Owners css End------------------- */

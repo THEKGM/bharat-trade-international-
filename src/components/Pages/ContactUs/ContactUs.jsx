@@ -30,8 +30,8 @@ function ContactUs() {
                                         <img src={MAIL_ICON} alt="" />
                                     </div>
                                     <h5 data-aos="zoom-in" data-aos-duration="1200">Email:</h5>
-                                    <p data-aos="flip-up" data-aos-duration="1200"><Link to="mailto:bharattradeinternational@gmail.com?subject=Demo Mail!">bharattradeinternational@gmail.com</Link><br />
-                                        <Link to="mailto:btinternational22@gmail.com?subject=testing Mail!">btinternational22@gmail.com</Link></p>
+                                    <p data-aos="flip-up" data-aos-duration="1200"><Link to="mailto:bharattradeinternational@gmail.com?subject=New Inquiry Mail!">bharattradeinternational@gmail.com</Link><br />
+                                        <Link to="mailto:btinternational22@gmail.com?subject=New Inquiry Mail!">btinternational22@gmail.com</Link></p>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="contact-icon" data-aos="zoom-out-up" data-aos-duration="1200">

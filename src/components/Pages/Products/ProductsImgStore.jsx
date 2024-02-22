@@ -56,21 +56,21 @@ function ProductsImgStore() {
                                                                         <table>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td>Variety</td>
-                                                                                    <td>Cavendish</td>
+                                                                                    <td>category</td>
+                                                                                    <td>{categoryName}</td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td>HS Code</td>
-                                                                                    <td>#111222</td>
+                                                                                    <td>{item.subCatProductId}</td>
                                                                                 </tr>
-                                                                                <tr>
-                                                                                    <td>Size</td>
+                                                                                {/* <tr>
+                                                                                    <td>Quantity</td>
                                                                                     <td>8 To 11</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td>Pkg.</td>
+                                                                                    <td>Weight.</td>
                                                                                     <td>7 kg/13 kg/ 18 kg</td>
-                                                                                </tr>
+                                                                                </tr> */}
                                                                             </tbody>
                                                                         </table>
                                                                     </div>

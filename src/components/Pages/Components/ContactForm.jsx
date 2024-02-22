@@ -97,6 +97,7 @@ function ContactForm() {
                         value={formData.name}
                         onChange={handleChange}
                         required
+                        autoComplete='off'
                         data-aos="flip-down" data-aos-duration="1200"
                     />
                     <input
@@ -107,6 +108,7 @@ function ContactForm() {
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        autoComplete='off'
                         data-aos="flip-down" data-aos-duration="1200"
                     />
                     {emailError && <p className="error-message">{emailError}</p>}
@@ -118,6 +120,7 @@ function ContactForm() {
                         value={formData.phnNumber}
                         onChange={handleChange}
                         required
+                        autoComplete='off'
                         data-aos="flip-down" data-aos-duration="1200"
                     />
                     <textarea
@@ -127,6 +130,7 @@ function ContactForm() {
                         value={formData.message}
                         onChange={handleChange}
                         required
+                        autoComplete='off'
                         data-aos="flip-down" data-aos-duration="1200"
                     ></textarea>
                     {loading && "Email Sending...."}

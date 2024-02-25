@@ -17,11 +17,7 @@ function App() {
   useEffect(() => {
     let arrowTopBtn = document.getElementById("arrowTopBtn");
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) {
-        arrowTopBtn.style.transform = "translateX(-25px)"
-      } else {
-        arrowTopBtn.style.transform = "translateX(100px)"
-      }
+      window.scrollY > 400 ? arrowTopBtn.style.transform = "translateX(-25px)" : arrowTopBtn.style.transform = "translateX(100px)"
     })
   }, [])
 
@@ -31,8 +27,7 @@ function App() {
   }
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '7041914309';
-    // const defaultMessage = encodeURIComponent("Hello, I'm interested in your services.");
+    const phoneNumber = '7041776309';
     const defaultMessage = encodeURIComponent("Hello! I'm exploring your website and would love to learn more about your services. Can you provide more information?");
     const url = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
     window.open(url, '_blank');
@@ -44,7 +39,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/productsImgStore' element={<ProductsImgStore />} />
-          {/* <Route path='/admin' element={<Admin />} /> */}
           <Route path='/' element={<Dashboard />} />
         </Routes>
         <Footer handleWhatsAppClick={handleWhatsAppClick} />

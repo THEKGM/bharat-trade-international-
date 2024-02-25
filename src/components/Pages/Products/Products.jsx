@@ -9,7 +9,6 @@ function Products() {
     const handleProductCategory = (subCategory, categoryName) => {
         localStorage.setItem('category', categoryName)
         navigate("/productsImgStore", { state: subCategory })
-        window.location.reload();
     }
 
     const handleOtherProduct = () => {
@@ -17,7 +16,6 @@ function Products() {
         if (footerSection) {
             footerSection.scrollIntoView({ behavior: 'smooth' });
         }
-        sessionStorage.setItem('IsCustomProduct', true);
     }
 
     return (

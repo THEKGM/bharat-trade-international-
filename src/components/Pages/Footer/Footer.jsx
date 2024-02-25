@@ -25,7 +25,6 @@ function Footer({ handleWhatsAppClick }) {
                                 </div>
                             </div>
                             <div className="contact-form col-md-7 col-lg-7 p-0 ps-md-5">
-                                {/* <ContactForm companyName="Bharat Trade International." /> */}
                                 <ContactForm />
                             </div>
                         </div>

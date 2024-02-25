@@ -52,7 +52,6 @@ function ProductsImgStore() {
                                                                         <img src={item.subCatProductImage} width={300} height={100} className='img-fluid rounded' alt={item.subCatProductName} />
                                                                     </div>
                                                                     <div className='modelDetails col-md-6'>
-                                                                        {/* <h5 className='text-center mb-3 p-2 text-white rounded' style={{ backgroundColor: '#e7b323d1' }}>{item.subCatProductName}</h5> */}
                                                                         <table>
                                                                             <tbody>
                                                                                 <tr>
@@ -63,14 +62,6 @@ function ProductsImgStore() {
                                                                                     <td>HS Code</td>
                                                                                     <td>{item.subCatProductId}</td>
                                                                                 </tr>
-                                                                                {/* <tr>
-                                                                                    <td>Quantity</td>
-                                                                                    <td>8 To 11</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>Weight.</td>
-                                                                                    <td>7 kg/13 kg/ 18 kg</td>
-                                                                                </tr> */}
                                                                             </tbody>
                                                                         </table>
                                                                     </div>
@@ -78,7 +69,7 @@ function ProductsImgStore() {
                                                             </div>
                                                             <div className="modal-footer">
                                                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                <button type="button" className="Btn" style={{ padding: '7px 15px', borderRadius: '6px' }}>Inquiry</button>
+                                                                {/* <button type="button" className="Btn" style={{ padding: '7px 15px', borderRadius: '6px' }}><a href='#contactSection'>Inquiry</a></button> */}
                                                             </div>
                                                         </div>
                                                     </div>

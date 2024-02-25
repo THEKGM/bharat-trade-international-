@@ -25,6 +25,7 @@ import CABBAGE_IMAGE from "../assets/Images/Products/Vegetables/cabbage-Vegetabl
 import GARLIC_IMAGE from "../assets/Images/Products/Vegetables/garlic-Vegetables.jpg";
 
 //Spices
+import MIX_SPICES_IMAGE from "../assets/Images/Products/Spices/spices-cover.jpg";
 import ASAFOETIDA_IMAGE from "../assets/Images/Products/Spices/asafoetida-Spices.jpg";
 import BADIYA_IMAGE from "../assets/Images/Products/Spices/badiya-Spices.jpg";
 import CARADAMOM_IMAGE from "../assets/Images/Products/Spices/cardamom-Spices.jpg";
@@ -40,8 +41,7 @@ import SPICES_IMAGE from "../assets/Images/Products/Spices/spices-Spices.jpg";
 import TURMARIC_IMAGE from "../assets/Images/Products/Spices/turmaric-Spices.jpg";
 
 //Dry Fruits
-import MIX_DRY_FRUITS_IMAGE from "../assets/Images/Products/DryFruits/nuts-mixFruits.jpg";
-// import MIX_DRY_FRUITS_IMAGE from "../assets/Images/Products/DryFruits/nuts-5555299_1920.jpg";
+import MIX_DRY_FRUITS_IMAGE from "../assets/Images/Products/DryFruits/mixDryFruits.jpg";
 import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almond-3849414_1920.jpg";
 import CASHEW_IMAGE from "../assets/Images/Products/DryFruits/cashew-DryFruits.jpg";
 import MIXDRY_IMAGE from "../assets/Images/Products/DryFruits/mixDry-Fruits.jpg";
@@ -76,7 +76,7 @@ import URAD_IMAGE from "../assets/Images/Products/Pulses/urad-Pulses.jpg";
 import YELLOW_SPLIT_IMAGE from "../assets/Images/Products/Pulses/yellow-split-Pulses.jpg";
 
 //Flour
-import MIX_FLOUR_IMAGE from "../assets/Images/Products/Flour/flour.jpg";
+import MIX_FLOUR_IMAGE from "../assets/Images/Products/Flour/flour-Front.jpg";
 import GRAM_FLOUR_IMAGE from "../assets/Images/Products/Flour/gram-Flour.jpg";
 import MAIDA_FLOUR_IMAGE from "../assets/Images/Products/Flour/maida-Flour.jpg";
 import MILLET_FLOUR_IMAGE from "../assets/Images/Products/Flour/millet-Flour.jpg";
@@ -206,7 +206,7 @@ export const products = [
     {
         categoryId: "SPI03",
         categoryName: "Spices",
-        categoryImage: SPICES_IMAGE,
+        categoryImage: MIX_SPICES_IMAGE,
         subCategory: [
             {
                 subCatProductId: "09042211",

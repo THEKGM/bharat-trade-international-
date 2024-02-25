@@ -60,7 +60,6 @@ function ContactForm() {
                 phnNumber: '',
                 message: '',
             });
-            // alert("Email successfully sent to BTI!")
             toast.success('Email successfully sent to BTI!', {
                 position: "top-right",
                 autoClose: 5000,
@@ -70,7 +69,6 @@ function ContactForm() {
                 draggable: true,
                 progress: undefined,
                 theme: "dark",
-                // transition: Bounce,
             });
         } catch (error) {
             console.log("error to sending", error)

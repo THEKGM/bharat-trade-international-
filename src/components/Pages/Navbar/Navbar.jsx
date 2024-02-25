@@ -1,6 +1,7 @@
 import React from 'react'
 import { HashLink as Link } from "react-router-hash-link"
 import { motion, useScroll } from "framer-motion"
+import header_Logo from "../../../assets/Images/1.png"
 import "./navbar.css"
 
 function Navbar() {
@@ -11,7 +12,7 @@ function Navbar() {
                 <div className='containerAlignSpace'>
                     <nav className="navbar navbar-expand-lg">
                         <div className="container-fluid">
-                            <Link className="navbar-brand" to="#homeSection">BharatTradeIns</Link>
+                            <Link className="navbar-brand d-flex align-items-center" to="#homeSection"><img src={header_Logo} height={50} alt='' />BharatTradeIns</Link>
                             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
@@ -26,7 +27,6 @@ function Navbar() {
                                     <Link className="nav-link" to="/#productImagesSection">Products</Link>
                                     <Link className="nav-link" to="/#aboutUsSection">About</Link>
                                     <Link className="nav-link" to="/#contactSection">Contact Us</Link>
-                                    {/* <Link className="nav-link" to="/admin">I AM ADMIN</Link> */}
                                 </div>
                             </div>
                         </div>

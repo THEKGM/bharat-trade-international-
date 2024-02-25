@@ -27,7 +27,7 @@ function Products() {
                         <p className='text-break'>"Dive into a variety that redefines choices, elevating your experience with our exceptional offerings."</p>
                     </div>
                     <div className="text-center p-0">
-                        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 p-0 m-0" id="productGrid">
+                        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-0 m-0" id="productGrid">
                             {products.map((value) => value.categoryId === "USR05" ? (
                                 <>
                                     <div className="col product-item" data-aos="flip-left" data-aos-duration="900">

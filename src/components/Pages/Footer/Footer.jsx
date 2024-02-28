@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa"
-import navBarLogo from "../../../assets/Images/WhatsApp_Image_2024-01-28_at_14.54.41_534a55c3-removebg-preview.png"
+import navBarLogo from "../../../assets/Images/footerImage.png"
 import "./footer.css"
 import ContactForm from '../Components/ContactForm'
 

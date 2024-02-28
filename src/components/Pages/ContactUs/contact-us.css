@@ -2,9 +2,7 @@
 
 .contact-section {
   text-align: center;
-  /* background-image: url("../../../assets/Images/contactBGImg1.jpg"); */
-  background-image: url("../../../assets/Images/container-ship-conatct3.jpg");
-  /* background-image: url("../../../assets/Images/container-537724_1920.jpg"); */
+  background-image: url("../../../assets/Images/contactBanner.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
@@ -52,7 +50,6 @@
 }
 
 .contact-icon {
-  /* background-color: #f19a0e; */
   background-color: var(--background-color);
   height: 70px;
   width: 70px;
@@ -77,8 +74,6 @@
 
 .contactSpace #contactDetailsRow > div {
   padding: 40px 0;
-  /* background-color: #fff;
-  color: #000000; */
 }
 
 /* Contact Us css End------------------- */

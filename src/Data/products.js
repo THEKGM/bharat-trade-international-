@@ -10,7 +10,7 @@ import POMEGRANATE_IMAGE from "../assets/Images/Products/Fruits/pomegranate-Frui
 import STRAWBERRY_IMAGE from "../assets/Images/Products/Fruits/strawberries-Fruits.jpg";
 
 //Vegetables
-import MIX_VEGETABLES_IMAGE from "../assets/Images/Products/mix-vegetable.jpg";
+import MIX_VEGETABLES_IMAGE from "../assets/Images/Products/Vegetables/mix-vegetable.jpg";
 import ONION_IMAGE from "../assets/Images/Products/Vegetables/onion-Vegetables.jpg";
 import CUCUMBER_IMAGE from "../assets/Images/Products/Vegetables/cucumber-Vegetables.jpg";
 import DRUMSTICK_IMAGE from "../assets/Images/Products/Vegetables/drumstick-Vegetables.jpg";

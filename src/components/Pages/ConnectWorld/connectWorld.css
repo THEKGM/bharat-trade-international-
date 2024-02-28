@@ -41,8 +41,6 @@
 }
 
 #featureCards {
-  /* background-color: #ffad28; */
-  /* background-color: #fbb84b; */
   text-align: center;
   margin: 0;
 }
@@ -70,7 +68,6 @@
 }
 
 #connectWorldSpace .row .col .card:hover {
-  /* box-shadow: 0 0 12px 13px var(--background-color); */
   transform: scale(1.05);
 }
 

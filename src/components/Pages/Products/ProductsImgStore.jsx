@@ -69,7 +69,6 @@ function ProductsImgStore() {
                                                             </div>
                                                             <div className="modal-footer">
                                                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                {/* <button type="button" className="Btn" style={{ padding: '7px 15px', borderRadius: '6px' }}><a href='#contactSection'>Inquiry</a></button> */}
                                                             </div>
                                                         </div>
                                                     </div>

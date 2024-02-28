@@ -1,7 +1,7 @@
 import React from 'react';
-import profileImage from "../../../assets/Images/IMG_20240225_152048_397.png";
-import profileImageTwo from "../../../assets/Images/profile-image.jpg";
-import profileImageThree from "../../../assets/Images/8058410205.png";
+import profileImage from "../../../assets/Images/profileImgPN.png";
+import profileImageTwo from "../../../assets/Images/profileImgNN.jpg";
+import profileImageThree from "../../../assets/Images/profileImgSN.png";
 import "./owner.css";
 
 function Owners() {

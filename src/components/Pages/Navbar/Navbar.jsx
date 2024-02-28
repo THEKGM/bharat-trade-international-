@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashLink as Link } from "react-router-hash-link"
 import { motion, useScroll } from "framer-motion"
-import header_Logo from "../../../assets/Images/1.png"
+import header_Logo from "../../../assets/Images/headerLogo.png"
 import "./navbar.css"
 
 function Navbar() {

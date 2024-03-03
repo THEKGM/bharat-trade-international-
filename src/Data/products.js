@@ -1,10 +1,10 @@
 //Fruits
 import MIX_FRUITS_IMAGE from "../assets/Images/Products/Fruits/Mix-Fruits.jpg";
-import APPlE_IMAGE from "../assets/Images/Products/Fruits/fruit-3860991_1920.jpg";
+import APPlE_IMAGE from "../assets/Images/Products/Fruits/apples-Fruits.jpg";
 import BANANA_IMAGE from "../assets/Images/Products/Fruits/banana-Fruits.jpg";
 import BREAKFAST_IMAGE from "../assets/Images/Products/Fruits/breakfast-Fruits.jpg";
 import CHERRIES_IMAGE from "../assets/Images/Products/Fruits/cherries-Fruits.jpg";
-import ORANGE_IMAGE from "../assets/Images/Products/Fruits/oranges-1995056_1920.jpg";
+import ORANGE_IMAGE from "../assets/Images/Products/Fruits/oranges-Fruits.jpg";
 import PINEAPPLE_IMAGE from "../assets/Images/Products/Fruits/pineapple-Fruits.jpg";
 import POMEGRANATE_IMAGE from "../assets/Images/Products/Fruits/pomegranate-Fruits.jpg";
 import STRAWBERRY_IMAGE from "../assets/Images/Products/Fruits/strawberries-Fruits.jpg";
@@ -35,14 +35,14 @@ import CLOVE_IMAGE from "../assets/Images/Products/Spices/clove-Spices.jpg";
 import CORIANDER_IMAGE from "../assets/Images/Products/Spices/coriander-Spices.jpg";
 import CUMIN_IMAGE from "../assets/Images/Products/Spices/cumin-Spices.jpg";
 import FENNEL_IMAGE from "../assets/Images/Products/Spices/fennel-Spices.jpg";
-import JAGGERY_IMAGE from "../assets/Images/Products/Spices/jaggery-Spices.jpg";
+import JAGGERY_IMAGE from "../assets/Images/Products/Spices/jaggerySpices.jpeg";
 import MINT_IMAGE from "../assets/Images/Products/Spices/mint-Spices.jpg";
 import SPICES_IMAGE from "../assets/Images/Products/Spices/spices-Spices.jpg";
 import TURMARIC_IMAGE from "../assets/Images/Products/Spices/turmaric-Spices.jpg";
 
 //Dry Fruits
 import MIX_DRY_FRUITS_IMAGE from "../assets/Images/Products/DryFruits/mixDryFruits.jpg";
-import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almond-3849414_1920.jpg";
+import ALMONDS_IMAGE from "../assets/Images/Products/DryFruits/almond-DryFruits.jpg";
 import CASHEW_IMAGE from "../assets/Images/Products/DryFruits/cashew-DryFruits.jpg";
 import MIXDRY_IMAGE from "../assets/Images/Products/DryFruits/mixDry-Fruits.jpg";
 import RAISINS_IMAGE from "../assets/Images/Products/DryFruits/raisins-DryFruits.jpg";

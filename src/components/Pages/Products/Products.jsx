@@ -23,7 +23,7 @@ function Products() {
             <section id='productImagesSection' className='product-images-section'>
                 <div className='productImageSpace'>
                     <div className='product-info py-2 text-white' data-aos="zoom-in">
-                        <h1>Digital Design.</h1>
+                        <h1>Products Categories</h1>
                         <p className='text-break'>"Dive into a variety that redefines choices, elevating your experience with our exceptional offerings."</p>
                     </div>
                     <div className="text-center p-0">

@@ -29,7 +29,7 @@ function Footer({ handleWhatsAppClick }) {
                             </div>
                         </div>
                         <div className='copyright-section mt-3' id="copyrightSection">
-                            <p className="copyright mb-0">&copy; 2024 Bharat Trade International. All Rights Reserved. Developed By <b>THE KGM INFOTECH</b></p>
+                            <p className="copyright mb-0">&copy; 2024 Bharat Trade International. All Rights Reserved.</p>
                         </div>
                     </footer>
                 </div>

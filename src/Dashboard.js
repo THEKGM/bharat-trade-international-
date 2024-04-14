@@ -5,6 +5,8 @@ import Products from './components/Pages/Products/Products'
 import Owners from './components/Pages/Owner/Owners'
 import About from './components/Pages/About/About'
 import ContactUs from './components/Pages/ContactUs/ContactUs'
+import Services from './components/Pages/Services/Services'
+import Licenses from './components/Pages/Licenses/Licenses'
 
 function Dashboard() {
     const handleWhatsAppClick = () => {
@@ -22,6 +24,8 @@ function Dashboard() {
             <CnWorld />
             <Products />
             <Owners />
+            <Licenses />
+            <Services />
             <About handleWhatsAppClick={handleWhatsAppClick} />
             <ContactUs />
         </>

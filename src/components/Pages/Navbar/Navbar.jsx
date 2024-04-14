@@ -12,7 +12,7 @@ function Navbar() {
                 <div className='containerAlignSpace'>
                     <nav className="navbar navbar-expand-lg">
                         <div className="container-fluid">
-                            <Link className="navbar-brand d-flex align-items-center" to="#homeSection"><img src={header_Logo} height={50} alt='' />BharatTradeIns</Link>
+                            <Link className="navbar-brand d-flex align-items-center" to="#homeSection"><img src={header_Logo} alt='' />BharatTradeIns</Link>
                             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
@@ -26,6 +26,7 @@ function Navbar() {
                                     <Link className="nav-link active" aria-current="page" to="/#homeSection">Home</Link>
                                     <Link className="nav-link" to="/#productImagesSection">Products</Link>
                                     <Link className="nav-link" to="/#aboutUsSection">About</Link>
+                                    <Link className="nav-link" to="/#services">Services</Link>
                                     <Link className="nav-link" to="/#contactSection">Contact Us</Link>
                                 </div>
                             </div>

@@ -28,24 +28,20 @@ function Products() {
                     </div>
                     <div className="text-center p-0">
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-0 m-0" id="productGrid">
-                            {products.map((value) => value.categoryId === "USR05" ? (
-                                <>
-                                    <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                        <div onClick={handleOtherProduct}>
-                                            <img src={value.categoryImage} className='img-fluid' alt="Product" />
-                                            <div className='px-0 pb-0'><h5 className='mb-0'>{value.categoryName}</h5></div>
-                                        </div>
+                            {products.map((value, ind) => value.categoryId === "USR05" ? (
+                                <div className="col product-item" data-aos="flip-left" data-aos-duration="900" key={ind}>
+                                    <div onClick={handleOtherProduct}>
+                                        <img src={value.categoryImage} className='img-fluid' alt="Product" />
+                                        <div className='px-0 pb-0'><h5 className='mb-0'>{value.categoryName}</h5></div>
                                     </div>
-                                </>
+                                </div>
                             ) : (
-                                <>
-                                    <div className="col product-item" data-aos="flip-left" data-aos-duration="900">
-                                        <div onClick={() => handleProductCategory(value.subCategory, value.categoryName)}>
-                                            <img src={value.categoryImage} className='img-fluid' alt="Product" />
-                                            <div className='px-0 pb-0'><h5 className='mb-0'>{value.categoryName}</h5></div>
-                                        </div>
+                                <div className="col product-item" data-aos="flip-left" data-aos-duration="900" key={ind}>
+                                    <div onClick={() => handleProductCategory(value.subCategory, value.categoryName)}>
+                                        <img src={value.categoryImage} className='img-fluid' alt="Product" />
+                                        <div className='px-0 pb-0'><h5 className='mb-0'>{value.categoryName}</h5></div>
                                     </div>
-                                </>
+                                </div>
                             ))}
                         </div>
                     </div>

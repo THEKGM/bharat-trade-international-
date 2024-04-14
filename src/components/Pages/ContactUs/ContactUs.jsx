@@ -23,7 +23,7 @@ function ContactUs() {
                                         <img src={LOCATION_ICON} alt="" />
                                     </div>
                                     <h5 data-aos="fade-right" data-aos-duration="1200">Address:</h5>
-                                    <p data-aos="flip-up" data-aos-duration="1200">Amroli, Surat,<br /> Gujarat, India - 394107</p>
+                                    <p data-aos="flip-up" data-aos-duration="1200">Surat, Gujarat,<br />India - 394107</p>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="contact-icon" data-aos="zoom-out-up" data-aos-duration="1200">

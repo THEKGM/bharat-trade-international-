@@ -21,7 +21,7 @@ const Backer = styled.div`
     object-fit: contain;
   }
   @media screen and (max-width: 768px) {
-    margin: 0 15px;
+    width: 100px;
   }
 `;
 
@@ -48,9 +48,7 @@ function Licenses() {
       },
     });
 
-    console.log("splide>>>>", splide);
-
-    splide?.mount({ AutoScroll });
+    splide.mount({ AutoScroll });
   }, []);
 
   return (
@@ -68,7 +66,7 @@ function Licenses() {
         {/* Splide container */}
         <div className="mt-3 splide">
           <div className="splide__track overflow-hidden py-2">
-            <ul className="splide__list d-flex gap-5 py-5">
+            <ul className="splide__list d-flex gap-5 py-4 py-md-5">
               {licenses.map((item, ind) => (
                 <li
                   key={ind}

@@ -7,6 +7,10 @@
   top: 0;
 }
 
+.navbar-brand img {
+  height: 50px;
+}
+
 .offcanvas {
   width: 300px !important;
 }
@@ -31,6 +35,9 @@
 @media screen and (max-width: 991px) {
   .offcanvas-body {
     background-color: bisque;
+  }
+  .navbar-brand img {
+    height: 30px;
   }
 }
 

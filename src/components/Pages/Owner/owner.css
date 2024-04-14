@@ -41,4 +41,14 @@
   right: 10px !important;
 }
 
+.bottom-line {
+  content: "";
+  position: relative;
+  top: 0;
+  width: 30px;
+  height: 3px;
+  background-color: var(--background-color);
+  margin: 20px auto;
+}
+
 /* Owners css End------------------- */

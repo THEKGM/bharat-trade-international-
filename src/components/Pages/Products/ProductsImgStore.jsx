@@ -1,12 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { FaInfo } from "react-icons/fa"
+import { FaArrowLeft } from "react-icons/fa6";
 
 function ProductsImgStore() {
     const [subCategory, setSubCategory] = useState([])
     const [categoryName, setCategoryName] = useState('')
     const Location = useLocation();
     const scrollToTop = useRef();
+    const navigate = useNavigate();
 
     const scrollToTopView = () => {
         scrollToTop.current.scrollTop = { behavior: 'smooth' };
@@ -29,7 +31,7 @@ function ProductsImgStore() {
             <section id='ProductsImgStore' ref={scrollToTop}>
                 <div className='containerAlignSpace'>
                     <div className="AllProductsSpace">
-                        <div className='my-3 py-3 text-center bg-light'><h3 className='text-uppercase mb-0' style={{ fontFamily: 'auto', fontWeight: '600' }}>{categoryName || "Category Name"}</h3></div>
+                        <div className='my-3 py-3 text-center bg-light position-relative'><FaArrowLeft className='position-absolute' style={{ top: '50%', transform: 'translate(0, -50%)', left: '20px' }} onClick={() => navigate('/')} /><h3 className='text-uppercase mb-0' style={{ fontFamily: 'auto', fontWeight: '600' }}>{categoryName || "Category Name"}</h3></div>
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-0 p-0">
                             {subCategory && subCategory?.map((item, index) => (
                                 <>

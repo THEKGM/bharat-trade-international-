@@ -70,13 +70,13 @@ button a {
   position: fixed;
   bottom: 25px;
   right: 0;
-  font-size: 30px;
-  padding: 7px;
+  font-size: 25px;
+  padding: 7px 9px;
   padding-top: 0;
   border: 0;
   background: var(--background-color);
   color: #fff;
-  border-radius: 7px;
+  border-radius: 50%;
   transform: translateX(100px);
 }
 
@@ -146,10 +146,3 @@ button a {
     margin: 10px 0;
   }
 }
-
-/* @media screen and (max-width: 576px) {
-  .containerAlignSpace {
-    width: 100%;
-    padding: 0;
-  }
-} */

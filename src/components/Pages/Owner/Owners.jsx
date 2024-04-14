@@ -9,54 +9,45 @@ function Owners() {
         {
             ownerId: 1,
             ownerName: "Savan Navadiya",
-            ownerQuote: "At Bharat Trade International, we stand as a premier entity in the import and export domain, dedicated to fostering global trade. Our unwavering mission is to streamline international commerce by delivering streamlined and affordable solutions to businesses across all scales. Backed by a proficient team and a robust global network, we guarantee seamless operations, punctual deliveries, and unparalleled customer support. Discover more about our company ethos, values, and relentless pursuit of excellence by exploring our comprehensive About Us page.",
+            ownerQuote: "At Bharat Trade International, we stand as a premier entity in the import and export domain, dedicated to fostering global trade. Our unwavering mission is to streamline international commerce by delivering streamlined and affordable solutions to businesses across all scales.",
             ownerPosition: "Founder at BTI",
-            ownerImage: <img src={profileImageThree} alt="" data-aos="zoom-in" data-aos-duration="1200" />,
+            ownerImage: profileImageThree,
         },
         {
             ownerId: 2,
             ownerName: "Piyush Kumar Narola",
-            ownerQuote: "We take pride in our position as a prominent figure in the import and export landscape, dedicated to simplifying global commerce. Our mission is to empower businesses of all sizes with streamlined solutions that optimize efficiency and reduce costs. With a highly skilled team and a vast global network, we guarantee smooth operations, on-time deliveries, and exceptional service quality. Visit our About Us page to uncover our core values, company culture, and unwavering commitment to excellence.",
+            ownerQuote: "We take pride in our position as a prominent figure in the import and export landscape, dedicated to simplifying global commerce. Our mission is to empower businesses of all sizes with streamlined solutions that optimize efficiency and reduce costs.",
             ownerPosition: "Founder at BTI",
-            ownerImage: <img src={profileImage} alt="" data-aos="zoom-in" data-aos-duration="1200" />,
+            ownerImage: profileImage,
         },
         {
             ownerId: 3,
             ownerName: "Nikul Navadiya",
-            ownerQuote: '"Bharat Trade International International sets the benchmark as a trusted leader in the import and export realm, committed to facilitating seamless global transactions. Our overarching goal is to empower businesses with efficient, cost-effective solutions tailored to their unique needs. Backed by a proficient team and extensive global reach, we ensure precision, reliability, and unparalleled customer satisfaction. Explore our About Us page to delve deeper into our ethos, values, and dedication to driving international trade forward."',
+            ownerQuote: '"Bharat Trade International International sets the benchmark as a trusted leader in the import and export realm, committed to facilitating seamless global transactions. Our overarching goal is to empower businesses with efficient, cost-effective solutions tailored to their unique needs."',
             ownerPosition: "Founder at BTI",
-            ownerImage: <img src={profileImageTwo} alt="" data-aos="zoom-in" data-aos-duration="1200" />,
+            ownerImage: profileImageTwo,
         },
 
     ];
 
     return (
-        <section id='ownersSpace' className='bg-light'>
-            <h3 data-aos="zoom-in" className='text-center my-3' data-aos-duration="1200">Welcome, to the Bharat Trade International</h3>
-            <div className='containerAlignSpace bg-white'>
-                <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
-                    <div className="carousel-inner">
-                        {ownerData.map((owner, index) => (
-                            <div key={owner.ownerId} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                                <div className='OwnersMainPart row py-md-4 px-md-4 g-0'>
-                                    <div className='col-12 col-lg-6'>{owner.ownerImage}</div>
-                                    <div className='col-12 col-lg-6 infoChild'>
-                                        <p style={{ marginTop: "20px", minHeight: '195px' }} data-aos="fade-down" data-aos-duration="1200">{owner.ownerQuote}</p>
-                                        <h5 data-aos="fade-right" data-aos-duration="1200">{owner.ownerName}</h5>
-                                        <h6 data-aos="fade-up" data-aos-duration="1200">{owner.ownerPosition}</h6>
-                                    </div>
+        <section id='ownersSpace' className='bg-light py-3 pb-5'>
+            <h3 className='text-center my-3 pb-3'>Core Team of BTI</h3>
+            <div className='containerAlignSpace'>
+                <div className="row row-cols-1 row-cols-md-2 row-cols-md-3 g-4">
+                    {ownerData.map((owner, index) => (
+                        <div className="col" key={index}>
+                            <div className="card h-100 border-0 shadow py-3">
+                                <img src={owner.ownerImage} className="card-img-top mx-auto img-fluid object-fit-cover rounded-circle" style={{ maxHeight: "300px", height: "200px", width: "200px" }} alt="..." />
+                                <div className="card-body text-center mt-2">
+                                    <h5 className="card-title">{owner.ownerName}</h5>
+                                    <h5 className="card-title my-1">{owner.ownerPosition}</h5>
+                                    <p className="card-text pt-3">{owner.ownerQuote}</p>
                                 </div>
+                                <span className='bottom-line' />
                             </div>
-                        ))}
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

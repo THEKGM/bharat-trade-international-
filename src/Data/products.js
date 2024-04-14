@@ -88,6 +88,10 @@ import WHEAT_FLOUR_IMAGE from "../assets/Images/Products/Flour/wheat-Flour.jpg";
 //Other Product
 import OTHER_IMAGE from "../assets/Images/OtherProduct.jpg";
 
+//Raw Material
+import COTTON_IMAGE from "../assets/Images/Products/RawMaterials/cotton-branch.jpg"
+import FOX_NUTS_IMAGE from "../assets/Images/Products/RawMaterials/fox-nuts.jpg"
+
 export const products = [
     {
         categoryId: "FRS01",
@@ -474,7 +478,24 @@ export const products = [
         ],
     },
     {
-        categoryId: "USR05",
+        categoryId: "RS08",
+        categoryName: "Raw Material",
+        categoryImage: COTTON_IMAGE,
+        subCategory: [
+            {
+                subCatProductId: "1105",
+                subCatProductName: "Cotton",
+                subCatProductImage: COTTON_IMAGE,
+            },
+            {
+                subCatProductId: "1105",
+                subCatProductName: "Fox Nuts",
+                subCatProductImage: FOX_NUTS_IMAGE,
+            },
+        ]
+    },
+    {
+        categoryId: "USR09",
         categoryName: "Enter Your Own Product",
         categoryImage: OTHER_IMAGE,
     },

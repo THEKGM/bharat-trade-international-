@@ -85,6 +85,15 @@ import SORGHUM_FLOUR_IMAGE from "../assets/Images/Products/Flour/sorghum-Flour.j
 import URAD_FLOUR_IMAGE from "../assets/Images/Products/Flour/urad-flour.jpg";
 import WHEAT_FLOUR_IMAGE from "../assets/Images/Products/Flour/wheat-Flour.jpg";
 
+// Metal Scab
+import MIX_METAL_IMAGE from "../assets/Images/Products/MetalScabs/mix-metal.webp";
+import ALUMINUM_IMAGE from "../assets/Images/Products/MetalScabs/Aluminium-UBC-Scrap.jpg";
+import ALUMINUM_IGNOTS_IMAGE from "../assets/Images/Products/MetalScabs/aluminum-igots.jpeg";
+import ALUMINUM_6063_IMAGE from "../assets/Images/Products/MetalScabs/aluminum-6063-scrap.jpeg";
+import ALUMINUM_WIRE_IMAGE from "../assets/Images/Products/MetalScabs/aluminum-wire-scrap.jpeg";
+import COPPER_IMAGE from "../assets/Images/Products/MetalScabs/copper-scrap.jpg";
+import IRON_IMAGE from "../assets/Images/Products/MetalScabs/ironStole.jpg";
+
 //Other Product
 import OTHER_IMAGE from "../assets/Images/OtherProduct.jpg";
 
@@ -495,7 +504,44 @@ export const products = [
         ]
     },
     {
-        categoryId: "USR09",
+        categoryId: "MTS09",
+        categoryName: "Metal Scrap",
+        categoryImage: MIX_METAL_IMAGE,
+        subCategory: [
+            {
+                subCatProductId: "76020010",
+                subCatProductName: "Aluminum UBC Scrap",
+                subCatProductImage: ALUMINUM_IMAGE,
+            },
+            {
+                subCatProductId: "76012010",
+                subCatProductName: "Aluminum Ignots Scrap",
+                subCatProductImage: ALUMINUM_IGNOTS_IMAGE,
+            },
+            {
+                subCatProductId: "76020010",
+                subCatProductName: "Aluminum 6063 Scrap",
+                subCatProductImage: ALUMINUM_6063_IMAGE,
+            },
+            {
+                subCatProductId: "74040012",
+                subCatProductName: "Aluminum wire Scrap",
+                subCatProductImage: ALUMINUM_WIRE_IMAGE,
+            },
+            {
+                subCatProductId: "7419",
+                subCatProductName: "Copper",
+                subCatProductImage: COPPER_IMAGE,
+            },
+            {
+                subCatProductId: "7207",
+                subCatProductName: "Iron",
+                subCatProductImage: IRON_IMAGE,
+            },
+        ],
+    },
+    {
+        categoryId: "USR10",
         categoryName: "Enter Your Own Product",
         categoryImage: OTHER_IMAGE,
     },

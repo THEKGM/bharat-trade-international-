@@ -8,6 +8,8 @@ import IEC_LICENSES_IMAGE from "../../../assets/Images/Licenses/iec-code.jpeg";
 import MAKE_IN_INDIA_LICENSES_IMAGE from "../../../assets/Images/Licenses/make-in-india-logo.jpg";
 import MEME_LICENSES_IMAGE from "../../../assets/Images/Licenses/msme-removebg-preview.png";
 import SBOINDIA_LICENSES_IMAGE from "../../../assets/Images/Licenses/Spices_Board_of_India_Logo.png";
+import GPCB_LICENSES_IMAGE from "../../../assets/Images/Licenses/gpcb-licence.jpg";
+import SIMS_LICENSES_IMAGE from "../../../assets/Images/Licenses/sims-license.webp";
 import { Splide } from "@splidejs/splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "./licenses.css";
@@ -34,6 +36,8 @@ const licenses = [
   MAKE_IN_INDIA_LICENSES_IMAGE,
   MEME_LICENSES_IMAGE,
   SBOINDIA_LICENSES_IMAGE,
+  GPCB_LICENSES_IMAGE,
+  SIMS_LICENSES_IMAGE
 ];
 
 function Licenses() {

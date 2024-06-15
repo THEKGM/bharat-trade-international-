@@ -21,7 +21,7 @@ function Products() {
     return (
         <>
             <section id='productImagesSection' className='product-images-section'>
-                <div className='productImageSpace'>
+                <div className='productImageSpace containerAlignSpace'>
                     <div className='product-info py-2 text-white' data-aos="zoom-in">
                         <h1>Products Categories</h1>
                         <p className='text-break'>"Dive into a variety that redefines choices, elevating your experience with our exceptional offerings."</p>
